@@ -1,0 +1,10 @@
+This table lists possible replacement for obsolete hard-to-find chips.
+Since i live in Russia some or these replacements are Soviet/Russian clones of
+original chips.
+
+am2901		1804Çë1
+am2907		1804Çì1
+93427c		äê556êí11
+am2907		1804BA2		Not a precise analog; actually am2908
+am93l422	äå185êì7Ä
+sn74ls669	74ls169
