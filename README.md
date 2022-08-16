@@ -19,13 +19,15 @@ size are impossible to find.
 
 Russian characters in this file are using UTF-8 character set.
 
-|AM2901		|1804ВС1		|
-|AM2907		|1804ВУ1		|
-|93427C		|КР556РТ11		|
-|AM2907		|1804BA2		|Not a precise analog; actually AM2908
-|AM93l422	|КМ185РУ7А		|
-|74LS669	|74LS169, К555ИЕ17	|
-|74LS379	|КМ555ТМ10		|
-|74LS37		|К555ЛА2		|
-|74LS38		|К555ЛА13		|
-|74LS240	|К555АП3		|
+|Original       |Replacement            |Notes
+|---------------|-----------------------|---------------------------------------|
+|AM2901		|1804ВС1		|					|
+|AM2907		|1804ВУ1		|					|
+|93427C		|КР556РТ11		|					|
+|AM2907		|1804BA2		|Not a precise analog; actually AM2908	|
+|AM93l422	|КМ185РУ7А		|					|
+|74LS669	|74LS169, К555ИЕ17	|					|
+|74LS379	|КМ555ТМ10		|					|
+|74LS37		|К555ЛА2		|					|
+|74LS38		|К555ЛА13		|					|
+|74LS240	|К555АП3		|					|
