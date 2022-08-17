@@ -34836,7 +34836,7 @@
     (property "Value" "74LS244" (id 1) (at 124.9806 486.41 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 124.46 504.19 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 124.46 504.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74ls244.pdf" (id 3) (at 124.46 504.19 0)
@@ -36021,7 +36021,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x36_Odd_Even") (at 50.8 419.1 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 204a5142-3c33-4dca-b85e-682e0b14a381)
-    (property "Reference" "J?" (id 0) (at 52.07 369.57 0))
+    (property "Reference" "J1" (id 0) (at 52.07 369.57 0))
     (property "Value" "Conn_02x36_Odd_Even" (id 1) (at 52.07 372.11 0))
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x36_P2.54mm_Horizontal" (id 2) (at 50.8 419.1 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -36614,7 +36614,7 @@
   (symbol (lib_id "power:+5V") (at 224.79 38.1 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 293729d1-772d-4195-bf12-90b15154d195)
-    (property "Reference" "#PWR?" (id 0) (at 224.79 41.91 0)
+    (property "Reference" "#PWR0275" (id 0) (at 224.79 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 224.79 34.29 0))
@@ -36809,7 +36809,7 @@
     (property "Value" "74LS240" (id 1) (at 124.9806 387.35 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 124.46 405.13 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 124.46 405.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74ls240.pdf" (id 3) (at 124.46 405.13 0)
@@ -37585,7 +37585,7 @@
   (symbol (lib_id "power:+5V") (at 224.79 81.28 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 37154810-0eb6-4384-8b58-ea5d88ce7d61)
-    (property "Reference" "#PWR?" (id 0) (at 224.79 85.09 0)
+    (property "Reference" "#PWR0273" (id 0) (at 224.79 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 224.79 77.47 0))
@@ -38140,7 +38140,7 @@
     (property "Value" "74LS240" (id 1) (at 124.9806 534.67 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 124.46 552.45 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 124.46 552.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74ls240.pdf" (id 3) (at 124.46 552.45 0)
@@ -39042,7 +39042,7 @@
   (symbol (lib_id "power:GND") (at 224.79 71.12 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 55e0192c-333f-4ef1-8d62-c9b5f90655e1)
-    (property "Reference" "#PWR?" (id 0) (at 224.79 77.47 0)
+    (property "Reference" "#PWR0274" (id 0) (at 224.79 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 224.79 74.93 0))
@@ -41009,7 +41009,7 @@
   (symbol (lib_id "power:+5V") (at 124.46 332.74 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 7685b558-bbae-4e2c-97dd-d00c01798d38)
-    (property "Reference" "#PWR?" (id 0) (at 124.46 336.55 0)
+    (property "Reference" "#PWR0271" (id 0) (at 124.46 336.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 121.92 330.2 0))
@@ -41726,7 +41726,7 @@
   (symbol (lib_name "74LS471_1") (lib_id "74xx:74LS471") (at 224.79 54.61 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 87f1dd62-191b-408d-8ad7-44a75dff6333)
-    (property "Reference" "U_B13.L" (id 0) (at 226.06 39.37 0)
+    (property "Reference" "U_BL13" (id 0) (at 226.06 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "93427С" (id 1) (at 224.79 54.61 90))
@@ -42129,7 +42129,7 @@
   (symbol (lib_id "power:+5V") (at 203.2 140.97 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 8d04b570-d7ce-4363-b650-cfcaa0163f71)
-    (property "Reference" "#PWR?" (id 0) (at 203.2 144.78 0)
+    (property "Reference" "#PWR0223" (id 0) (at 203.2 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 205.74 138.43 0))
@@ -43434,7 +43434,7 @@
   (symbol (lib_id "power:+5V") (at 124.46 577.85 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ab2c75e1-a32e-4f32-a4cb-c6452432b69d)
-    (property "Reference" "#PWR?" (id 0) (at 124.46 581.66 0)
+    (property "Reference" "#PWR0272" (id 0) (at 124.46 581.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 121.92 575.31 0))
@@ -43806,7 +43806,7 @@
     (property "Value" "74LS244" (id 1) (at 124.9806 580.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 124.46 598.17 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 124.46 598.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74ls244.pdf" (id 3) (at 124.46 598.17 0)
@@ -44084,7 +44084,7 @@
   (symbol (lib_id "Device:R") (at 209.55 143.51 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b53465e7-5635-42f9-94a4-0e2c7f049c61)
-    (property "Reference" "R?" (id 0) (at 209.55 140.97 90))
+    (property "Reference" "R13" (id 0) (at 209.55 140.97 90))
     (property "Value" "4.7k" (id 1) (at 209.55 143.51 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 209.55 141.732 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -44115,7 +44115,7 @@
   (symbol (lib_id "power:GND") (at 124.46 373.38 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b5672e1c-a7ab-4648-a4a8-271298771eb1)
-    (property "Reference" "#PWR?" (id 0) (at 124.46 379.73 0)
+    (property "Reference" "#PWR0270" (id 0) (at 124.46 379.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 127 375.92 0))
@@ -44749,7 +44749,7 @@
   (symbol (lib_name "74LS471_1") (lib_id "74xx:74LS471") (at 224.79 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c0266c95-ae17-45e2-bf80-9f2f693576d4)
-    (property "Reference" "U_B13.H" (id 0) (at 226.06 82.55 0)
+    (property "Reference" "U_BL13" (id 0) (at 226.06 82.55 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "93427С" (id 1) (at 224.79 97.79 90))
@@ -44876,13 +44876,13 @@
   (symbol (lib_id "74xx:74LS244") (at 124.46 353.06 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c216c137-8c5b-4ab9-ae33-c61c1ab1c009)
-    (property "Reference" "UA9" (id 0) (at 124.9806 332.74 0)
+    (property "Reference" "U_A9" (id 0) (at 124.9806 332.74 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "74LS244" (id 1) (at 124.9806 335.28 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 124.46 353.06 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 124.46 353.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74ls244.pdf" (id 3) (at 124.46 353.06 0)
@@ -48031,7 +48031,7 @@
   (symbol (lib_id "power:GND") (at 224.79 114.3 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f9982020-045e-4713-b42c-7320e77c8a47)
-    (property "Reference" "#PWR?" (id 0) (at 224.79 120.65 0)
+    (property "Reference" "#PWR0217" (id 0) (at 224.79 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 224.79 118.11 0))
@@ -48995,6 +48995,9 @@
     (path "/5a83c65c-80e5-4f3b-9a7c-7739a2df30af"
       (reference "#PWR0216") (unit 1) (value "GND") (footprint "")
     )
+    (path "/f9982020-045e-4713-b42c-7320e77c8a47"
+      (reference "#PWR0217") (unit 1) (value "GND") (footprint "")
+    )
     (path "/062cea0d-10d9-46e7-9004-245be21af39f"
       (reference "#PWR0218") (unit 1) (value "GND") (footprint "")
     )
@@ -49009,6 +49012,9 @@
     )
     (path "/1c4daacc-73fc-4c24-8757-49872dcb8f53"
       (reference "#PWR0222") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/8d04b570-d7ce-4363-b650-cfcaa0163f71"
+      (reference "#PWR0223") (unit 1) (value "+5V") (footprint "")
     )
     (path "/b81eec2f-a87a-42e5-b096-5f21adec0533"
       (reference "#PWR0224") (unit 1) (value "GND") (footprint "")
@@ -49148,29 +49154,23 @@
     (path "/dd520ca4-16bf-4e3f-aff2-a88b3a72b53e"
       (reference "#PWR0269") (unit 1) (value "GND") (footprint "")
     )
-    (path "/293729d1-772d-4195-bf12-90b15154d195"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/37154810-0eb6-4384-8b58-ea5d88ce7d61"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/55e0192c-333f-4ef1-8d62-c9b5f90655e1"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/b5672e1c-a7ab-4648-a4a8-271298771eb1"
+      (reference "#PWR0270") (unit 1) (value "GND") (footprint "")
     )
     (path "/7685b558-bbae-4e2c-97dd-d00c01798d38"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/8d04b570-d7ce-4363-b650-cfcaa0163f71"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0271") (unit 1) (value "+5V") (footprint "")
     )
     (path "/ab2c75e1-a32e-4f32-a4cb-c6452432b69d"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0272") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/b5672e1c-a7ab-4648-a4a8-271298771eb1"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/37154810-0eb6-4384-8b58-ea5d88ce7d61"
+      (reference "#PWR0273") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/f9982020-045e-4713-b42c-7320e77c8a47"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/55e0192c-333f-4ef1-8d62-c9b5f90655e1"
+      (reference "#PWR0274") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/293729d1-772d-4195-bf12-90b15154d195"
+      (reference "#PWR0275") (unit 1) (value "+5V") (footprint "")
     )
     (path "/82ce69c1-2705-465b-8811-8f88b7c3daa0"
       (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -49341,7 +49341,7 @@
       (reference "DSW1") (unit 1) (value "SW_DIP_x08") (footprint "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm")
     )
     (path "/204a5142-3c33-4dca-b85e-682e0b14a381"
-      (reference "J?") (unit 1) (value "Conn_02x36_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x36_P2.54mm_Horizontal")
+      (reference "J1") (unit 1) (value "Conn_02x36_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x36_P2.54mm_Horizontal")
     )
     (path "/25a6a420-d138-460a-9a95-c8a71db3148b"
       (reference "JP1") (unit 1) (value "Jumper_3_Open") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
@@ -49406,6 +49406,9 @@
     (path "/36e762df-110e-4288-b3ab-1943bc64ace3"
       (reference "R12") (unit 1) (value "4.7k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
+    (path "/b53465e7-5635-42f9-94a4-0e2c7f049c61"
+      (reference "R13") (unit 1) (value "4.7k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+    )
     (path "/f9688d99-9c77-43eb-95ca-66b1cdc5f9b2"
       (reference "R14") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
@@ -49421,14 +49424,8 @@
     (path "/2a1ee668-14d7-4c32-86e1-1aefa86759e0"
       (reference "R19") (unit 1) (value "4.7k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
-    (path "/b53465e7-5635-42f9-94a4-0e2c7f049c61"
-      (reference "R?") (unit 1) (value "4.7k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
-    )
     (path "/bae832c4-9588-4d3a-87a5-5834742669e1"
       (reference "RN16") (unit 1) (value "220/330") (footprint "Resistor_THT:R_Array_SIP10")
-    )
-    (path "/c216c137-8c5b-4ab9-ae33-c61c1ab1c009"
-      (reference "UA9") (unit 1) (value "74LS244") (footprint "")
     )
     (path "/86465a22-d18f-4fb5-9e82-c4a481bb823f"
       (reference "U_A1") (unit 1) (value "74LS74") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -49476,19 +49473,22 @@
       (reference "U_A3") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/b1c0c93c-5815-41d5-88fd-e0d3a52d8d3a"
-      (reference "U_A4") (unit 1) (value "74LS244") (footprint "")
+      (reference "U_A4") (unit 1) (value "74LS244") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/415b5f00-6376-41b7-b1ca-9910e493328b"
-      (reference "U_A5") (unit 1) (value "74LS240") (footprint "")
+      (reference "U_A5") (unit 1) (value "74LS240") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/0a65484f-fc50-4c0a-8ca2-3a038ffdc74f"
-      (reference "U_A6") (unit 1) (value "74LS244") (footprint "")
+      (reference "U_A6") (unit 1) (value "74LS244") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/b3e2486b-59d2-4e27-8bbd-75247e98bb86"
       (reference "U_A7") (unit 1) (value "74LS240") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/2c58173e-3955-4a2f-944a-c7db1ef853e7"
-      (reference "U_A8") (unit 1) (value "74LS240") (footprint "")
+      (reference "U_A8") (unit 1) (value "74LS240") (footprint "Package_DIP:DIP-20_W7.62mm")
+    )
+    (path "/c216c137-8c5b-4ab9-ae33-c61c1ab1c009"
+      (reference "U_A9") (unit 1) (value "74LS244") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/0d6b112e-0c2a-40a7-b654-26cad5b0ade1"
       (reference "U_A10") (unit 1) (value "74LS240") (footprint "Package_DIP:DIP-20_W7.62mm")
@@ -49613,12 +49613,6 @@
     (path "/b6d0d127-b26d-4411-b941-b5eefc55d8de"
       (reference "U_B12") (unit 5) (value "74LS00") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
-    (path "/c0266c95-ae17-45e2-bf80-9f2f693576d4"
-      (reference "U_B13.H") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
-    )
-    (path "/87f1dd62-191b-408d-8ad7-44a75dff6333"
-      (reference "U_B13.L") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
-    )
     (path "/cc73d73e-18a7-42f8-b22f-2c1c9f6ca6f3"
       (reference "U_B15") (unit 1) (value "74LS74") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
@@ -49627,6 +49621,12 @@
     )
     (path "/55b64cc0-4a5d-4d2c-9644-2c520a97daef"
       (reference "U_B15") (unit 3) (value "74LS74") (footprint "Package_DIP:DIP-14_W7.62mm")
+    )
+    (path "/87f1dd62-191b-408d-8ad7-44a75dff6333"
+      (reference "U_BL13") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
+    )
+    (path "/c0266c95-ae17-45e2-bf80-9f2f693576d4"
+      (reference "U_BL13") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/8af415d4-268f-42b0-9c51-01a0acd645d3"
       (reference "U_C1") (unit 1) (value "74LS669") (footprint "Package_DIP:DIP-16_W7.62mm")
