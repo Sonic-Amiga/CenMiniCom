@@ -479,7 +479,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "CPU.net",
       "specctra_dsn": "CPU6.dsn",
       "step": "",
       "vrml": ""
