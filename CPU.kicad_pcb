@@ -8797,12 +8797,12 @@
     (at 372.5 220.5)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -3.5) (layer "F.SilkS") hide
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "HOLE4" (at 0 -3.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f13ed44b-7eb9-4b8e-93fe-d4a4036dfa3d)
     )
-    (fp_text value "MountingHole_2.5mm" (at 0 3.5) (layer "F.Fab")
+    (fp_text value "MountingHole_2.5mm" (at 0 3.5) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 059d821f-da22-4d04-8d4c-3db6295e667f)
     )
@@ -12404,8 +12404,8 @@
     (at 30.5 220.5)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -3.5) (layer "F.SilkS") hide
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "HOLE2" (at 0 -3.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 26bd74e5-86b9-42d8-9563-1730dc3cf6b3)
     )
@@ -12526,8 +12526,8 @@
     (at 30.5 30.5)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -3.5) (layer "F.SilkS") hide
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "HOLE1" (at 0 -3.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9e096f74-9def-4f5c-9ebc-87d320097934)
     )
@@ -15897,8 +15897,8 @@
     (at 372.5 30.5)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
-    (attr exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "REF**" (at 0 -3.5) (layer "F.SilkS") hide
+    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (fp_text reference "HOLE3" (at 0 -3.5) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a9502067-c286-4abe-a63f-c9c969d5264a)
     )
@@ -16408,11 +16408,11 @@
   )
 
   (gr_line (start 38.5 26) (end 26 38.5) (layer "F.SilkS") (width 0.15) (tstamp d73a42ed-375c-4baa-b116-d712bc462a9a))
+  (gr_rect (start 24 24) (end 379 227) (layer "Edge.Cuts") (width 0.1) (fill none) (tstamp ebb3cce1-a8e4-4c82-b18b-f1d8eacce19e))
   (gr_rect (start 24 220.5) (end 30.5 227) (layer "User.1") (width 0.15) (fill none) (tstamp 3d06d5ff-d2d0-41da-9a2f-906489520344))
   (gr_rect (start 372.5 220.5) (end 379 227) (layer "User.1") (width 0.15) (fill none) (tstamp 5ab8bbaf-fe38-48e3-927d-5b101866a89f))
   (gr_rect (start 372.5 24) (end 379 30.5) (layer "User.1") (width 0.15) (fill none) (tstamp af1cab41-c716-4fcb-9cdf-b587c68db969))
   (gr_rect (start 24 24) (end 30.5 30.5) (layer "User.1") (width 0.15) (fill none) (tstamp b219d2a3-6abc-44a4-9f1b-cf1c3f175bb2))
-  (gr_rect (start 24 24) (end 379 227) (layer "User.1") (width 0.1) (fill none) (tstamp ebb3cce1-a8e4-4c82-b18b-f1d8eacce19e))
   (gr_text "TOP" (at 56.165 29.275) (layer "F.SilkS") (tstamp 75a3745b-c39b-4112-9fb5-fc674582060f)
     (effects (font (size 2 2) (thickness 0.5)))
   )
