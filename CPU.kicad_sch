@@ -41729,7 +41729,7 @@
     (property "Reference" "U_BL13" (id 0) (at 226.06 39.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "93427С" (id 1) (at 224.79 54.61 90))
+    (property "Value" "93427C" (id 1) (at 224.79 54.61 90))
     (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 247.65 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -44749,10 +44749,10 @@
   (symbol (lib_name "74LS471_1") (lib_id "74xx:74LS471") (at 224.79 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c0266c95-ae17-45e2-bf80-9f2f693576d4)
-    (property "Reference" "U_BL13" (id 0) (at 226.06 82.55 0)
+    (property "Reference" "U_BH13" (id 0) (at 226.06 82.55 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "93427С" (id 1) (at 224.79 97.79 90))
+    (property "Value" "93427C" (id 1) (at 224.79 97.79 90))
     (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 247.65 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -45483,7 +45483,7 @@
     (property "Value" "74LS377" (id 1) (at 685.2794 314.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_SO:SOIC-20W_7.5x15.4mm_P1.27mm" (id 2) (at 683.26 332.74 0)
+    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 683.26 332.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS377" (id 3) (at 683.26 332.74 0)
@@ -49622,11 +49622,11 @@
     (path "/55b64cc0-4a5d-4d2c-9644-2c520a97daef"
       (reference "U_B15") (unit 3) (value "74LS74") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
-    (path "/87f1dd62-191b-408d-8ad7-44a75dff6333"
-      (reference "U_BL13") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
-    )
     (path "/c0266c95-ae17-45e2-bf80-9f2f693576d4"
-      (reference "U_BL13") (unit 1) (value "93427С") (footprint "Package_DIP:DIP-20_W7.62mm")
+      (reference "U_BH13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-20_W7.62mm")
+    )
+    (path "/87f1dd62-191b-408d-8ad7-44a75dff6333"
+      (reference "U_BL13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/8af415d4-268f-42b0-9c51-01a0acd645d3"
       (reference "U_C1") (unit 1) (value "74LS669") (footprint "Package_DIP:DIP-16_W7.62mm")
@@ -49998,7 +49998,7 @@
       (reference "U_J7") (unit 1) (value "AM2909") (footprint "Package_DIP:DIP-28_W15.24mm_Socket")
     )
     (path "/cc24a074-79d6-4378-b126-d90f29389b87"
-      (reference "U_J9") (unit 1) (value "74LS377") (footprint "Package_SO:SOIC-20W_7.5x15.4mm_P1.27mm")
+      (reference "U_J9") (unit 1) (value "74LS377") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/ff0c18df-50e1-484f-ad31-ecc5c9016abe"
       (reference "U_J10") (unit 1) (value "74LS151") (footprint "Package_DIP:DIP-16_W7.62mm")
