@@ -35047,7 +35047,7 @@
     (property "Value" "SW_DIP_x08" (id 1) (at 1102.36 471.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm" (id 2) (at 1102.36 486.41 0)
+    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx08_Piano_10.8x21.88mm_W7.62mm_P2.54mm" (id 2) (at 1102.36 486.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 1102.36 486.41 0)
@@ -49327,7 +49327,7 @@
       (reference "CR1") (unit 1) (value "D") (footprint "Diode_THT:D_A-405_P10.16mm_Horizontal")
     )
     (path "/0e0f6599-d617-4724-a56a-b1f9871a19f6"
-      (reference "DSW1") (unit 1) (value "SW_DIP_x08") (footprint "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm")
+      (reference "DSW1") (unit 1) (value "SW_DIP_x08") (footprint "Button_Switch_THT:SW_DIP_SPSTx08_Piano_10.8x21.88mm_W7.62mm_P2.54mm")
     )
     (path "/204a5142-3c33-4dca-b85e-682e0b14a381"
       (reference "J1") (unit 1) (value "Conn_02x36_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x36_P2.54mm_Horizontal")
