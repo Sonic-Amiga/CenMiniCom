@@ -41831,7 +41831,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "93427C" (id 1) (at 224.79 54.61 90))
-    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 247.65 29.21 0)
+    (property "Footprint" "Package_DIP:DIP-16_W7.62mm" (id 2) (at 247.65 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 247.65 29.21 0)
@@ -44868,7 +44868,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "93427C" (id 1) (at 224.79 97.79 90))
-    (property "Footprint" "Package_DIP:DIP-20_W7.62mm" (id 2) (at 247.65 72.39 0)
+    (property "Footprint" "Package_DIP:DIP-16_W7.62mm" (id 2) (at 247.65 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 247.65 72.39 0)
@@ -49857,10 +49857,10 @@
       (reference "U_B15") (unit 3) (value "74LS74") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/c0266c95-ae17-45e2-bf80-9f2f693576d4"
-      (reference "U_BH13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-20_W7.62mm")
+      (reference "U_BH13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-16_W7.62mm")
     )
     (path "/87f1dd62-191b-408d-8ad7-44a75dff6333"
-      (reference "U_BL13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-20_W7.62mm")
+      (reference "U_BL13") (unit 1) (value "93427C") (footprint "Package_DIP:DIP-16_W7.62mm")
     )
     (path "/8af415d4-268f-42b0-9c51-01a0acd645d3"
       (reference "U_C1") (unit 1) (value "74LS669") (footprint "Package_DIP:DIP-16_W7.62mm")
