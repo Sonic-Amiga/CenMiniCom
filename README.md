@@ -12,10 +12,13 @@ Centurion minicomputer. The repository is a fork of Meisaka's reverse engineerin
 
 2. Some old and hard-to-find chips are replaced with easier to find analogs.
 Since i live in Russia some or these replacements are Soviet/Russian clones of
-original chips.
+original chips (see table below)
 
-3. Edge connector is replaced by 2x36 even-odd pin header because card slots of the required
-size are impossible to find.
+3. AM2911 is replaced by a third am2909
+
+4. Some of line twisting, present in the original schematics, redone for easier layout.
+
+See git log for more verbose history
 
 Russian characters in this file are using UTF-8 character set.
 
@@ -31,3 +34,14 @@ Russian characters in this file are using UTF-8 character set.
 |74LS37		|К555ЛА2		|					|
 |74LS38		|К555ЛА13		|					|
 |74LS240	|К555АП3		|					|
+
+# Assembly notes
+
+Current layout is done for 2 layers only. Since the board is very dense, some power nets have to be
+completed using wire jumpers. Pads on the bottom side of the board are provided for that. Connect
+all of them together in horisontal lines. A picture will be provided later, after i build the board
+myself.
+
+# Contacts
+
+Please direct all questions to pavel_fedin@mail.ru
