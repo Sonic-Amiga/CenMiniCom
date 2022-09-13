@@ -16,7 +16,9 @@ original chips (see table below)
 
 3. AM2911 is replaced by a third am2909
 
-4. Some of line twisting, present in the original schematics, redone for easier layout.
+4. Some diagnostics-only connectors and lines removed
+
+5. Some of line twisting, present in the original schematics, redone for easier layout.
 
 See git log for more verbose history
 
@@ -37,10 +39,10 @@ Russian characters in this file are using UTF-8 character set.
 
 # Assembly notes
 
-Current layout is done for 2 layers only. Since the board is very dense, some power nets have to be
-completed using wire jumpers. Pads on the bottom side of the board are provided for that. Connect
-all of them together in horisontal lines. A picture will be provided later, after i build the board
-myself.
+Current layout is done for 2 layers only. Since the board is very dense, there can be problems with
+power distribution due to small tracks (1.5 mm wide). For this case pads on the bottom side of the
+board are provided; it's possible to "strenghten" power traces by running extra wires in horisontal
+direction. Note this is a very experimental build.
 
 # Contacts
 
