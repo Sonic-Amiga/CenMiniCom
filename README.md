@@ -39,10 +39,12 @@ Russian characters in this file are using UTF-8 character set.
 
 # Assembly notes
 
-Current layout is done for 2 layers only. Since the board is very dense, there can be problems with
-power distribution due to small tracks (1.5 mm wide). For this case pads on the bottom side of the
-board are provided; it's possible to "strenghten" power traces by running extra wires in horisontal
-direction. Note this is a very experimental build.
+Current layout is done for 2 layers only. Since the board is very dense, power distribution tracks 
+are rather narrow (1.5 mm wide). A considerable effort has been put in routing redundant tracks,
+but stability issues are still possible. For this case pads on the bottom side of the board are
+provided; it's possible to "strenghten" power traces by running extra wires in horisontal
+direction. Note this is a very experimental build; a need for such wires will be clarified during
+the process of building and debugging.
 
 # Contacts
 
