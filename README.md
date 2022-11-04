@@ -24,18 +24,26 @@ See git log for more verbose history
 
 Russian characters in this file are using UTF-8 character set.
 
-|Original       |Replacement            |Notes
+|Original       |Replacement            |Notes					|
 |---------------|-----------------------|---------------------------------------|
 |AM2901		|1804ВС1		|					|
 |AM2907		|1804ВУ1		|					|
 |93427C		|КР556РТ11		|					|
 |AM2907		|1804BA2		|Not a precise analog; actually AM2908	|
 |AM93l422	|КМ185РУ7А		|					|
-|74LS669	|74LS169, К555ИЕ17	|					|
-|74LS379	|КМ555ТМ10		|					|
-|74LS37		|К555ЛА2		|					|
+|74LS00		|К555ЛА3		|					|
+|74LS10		|К555ЛА4		|					|
+|74LS20		|К555ЛА1		|					|
+|74LS30		|К555ЛА2		|					|
+|74LS37		|К555ЛА12		|					|
 |74LS38		|К555ЛА13		|					|
+|74LS138	|К555ИД7		|					|
+|74LS151	|К555КП7		|					|
+|74LS153	|К555КП2		|					|
 |74LS240	|К555АП3		|					|
+|74LS377	|К555ИР27		|					|
+|74LS379	|КМ555ТМ10		|					|
+|74LS669	|74LS169, К555ИЕ17	|					|
 
 # Assembly notes
 
