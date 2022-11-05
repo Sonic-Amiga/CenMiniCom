@@ -34659,7 +34659,7 @@
     (property "Value" "100nF" (id 1) (at 1028.7 638.8162 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT" (id 2) (at 1026.16 637.54 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" (id 2) (at 1026.16 637.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 1026.16 637.54 0)
@@ -37088,7 +37088,7 @@
   (symbol (lib_id "power:+5V") (at 434.34 731.52 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 383a3a47-54a4-4eda-bdc6-6fa099d35b87)
-    (property "Reference" "#PWR?" (id 0) (at 434.34 735.33 0)
+    (property "Reference" "#PWR0187" (id 0) (at 434.34 735.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 434.34 726.44 0))
@@ -48545,6 +48545,9 @@
     (path "/3d27e537-586b-4762-b21a-c9c16c5fdf24"
       (reference "#PWR0186") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/383a3a47-54a4-4eda-bdc6-6fa099d35b87"
+      (reference "#PWR0187") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/41917ead-eae6-480a-83b8-b494ad5c8dec"
       (reference "#PWR0191") (unit 1) (value "+5V") (footprint "")
     )
@@ -48818,9 +48821,6 @@
     (path "/b3e4907a-19c3-46e3-b7b8-f4fe047705fb"
       (reference "#PWR0285") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/383a3a47-54a4-4eda-bdc6-6fa099d35b87"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
     (path "/82ce69c1-2705-465b-8811-8f88b7c3daa0"
       (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
@@ -48828,7 +48828,7 @@
       (reference "C2") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/0f488a23-ea0e-4780-80ac-4f6e8ac2653f"
-      (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT")
+      (reference "C3") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/f5194f1e-b840-46bc-8058-8e146ee9b6db"
       (reference "C4") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
