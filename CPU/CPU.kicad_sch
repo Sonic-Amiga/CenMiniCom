@@ -29204,6 +29204,11 @@
     (effects (font (size 3.81 3.81)) (justify left bottom))
     (uuid 7b44cf99-49fe-4216-9c25-dfc0856f413b)
   )
+  (text "R2 and R3 may require tuning depending on the particular\nU_M10 chip series and/or crystal type installed.\nThe schematic lists values found on the original\nCPU-6 board. See the README for more info."
+    (at 839.47 307.34 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7c92f0d1-9906-46af-8971-112199aa9c57)
+  )
   (text "B12D is\nHIGH when REGFILE is addressed OR PTR.Q_{7} is set (high)\nLOW when Memory is addressed AND PTR.Q_{7} is clear (low)"
     (at 292.1 453.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -38987,7 +38992,7 @@
     (property "Reference" "R3" (id 0) (at 914.4 311.15 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "550" (id 1) (at 915.67 313.69 90))
+    (property "Value" "330" (id 1) (at 915.67 313.69 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 915.67 315.468 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -44517,7 +44522,7 @@
     (property "Reference" "R2" (id 0) (at 892.81 311.15 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "550" (id 1) (at 894.08 313.69 90))
+    (property "Value" "330" (id 1) (at 894.08 313.69 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (id 2) (at 894.08 315.468 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -49031,10 +49036,10 @@
       (reference "R1") (unit 1) (value "330") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/c4848a8c-ab6e-4ae9-9931-6b4bf2df301b"
-      (reference "R2") (unit 1) (value "550") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R2") (unit 1) (value "330") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/5f53f0fc-ead6-45ba-a973-cead475b7028"
-      (reference "R3") (unit 1) (value "550") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R3") (unit 1) (value "330") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/97b5092a-0879-45ef-a2ec-d360c06c0691"
       (reference "R5") (unit 1) (value "470") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
