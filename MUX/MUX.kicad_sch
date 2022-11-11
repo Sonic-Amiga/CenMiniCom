@@ -13097,7 +13097,7 @@
     (uuid 42058e89-a9b6-49fc-bc7a-27c0f4380a48)
   )
 
-  (wire (pts (xy 250.19 303.53) (xy 401.32 303.53))
+  (wire (pts (xy 309.88 303.53) (xy 401.32 303.53))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 42c5273c-1859-4987-ae18-8e49e10ef9f6)
   )
@@ -18457,6 +18457,10 @@
     (uuid c56a87d3-e4d8-43f7-a1dc-7fafac92e740)
   )
 
+  (wire (pts (xy 309.88 287.02) (xy 250.19 287.02))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid c578fa91-2e7d-49bb-8f15-47e7da6d50e7)
+  )
   (wire (pts (xy 210.82 401.32) (xy 204.47 401.32))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c5aa6080-f1a6-4cd5-a6af-f53a9504fa97)
@@ -18515,7 +18519,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c73475d5-10f8-4614-9cef-069cccb41c04)
   )
-  (wire (pts (xy 250.19 287.02) (xy 250.19 303.53))
+  (wire (pts (xy 309.88 287.02) (xy 309.88 303.53))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid c735cc53-bf82-474c-b14d-90723f576850)
   )
@@ -20826,8 +20830,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1383561b-0ad6-4cdc-94f9-9b08f6dfe926)
   )
-  (text "This row of pins allows to use russian 1533 series chip\ninstead of an old and rare original. The newer chip has a\nnarrow DIP package, but unfortunaly it doesn't seem to have\na direct western analog (would be 74ALS154), so for reproducibility\nthis design allows both for wide and narrow DIP packages.\nPins 1 - 12 are shared."
-    (at 312.42 332.74 0)
+  (text "This row of pins allows to use russian КР1533ИД3\nchip instead of an old and rare original. The newer\nchip has a narrow DIP package, but unfortunaly it\ndoesn't seem to have a direct western analog (would\nbe 74ALS154), so for reproducibility this design\nallows both for wide and narrow DIP packages.\nPins 1 - 12 are shared."
+    (at 241.3 316.23 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1387ad4e-9b94-44ca-b47b-f3b78e8fabdd)
   )
@@ -21257,7 +21261,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 79771a9e-3f8e-4fb2-80ac-4029cb1b1b2a)
   )
-  (text "This dipswitch and set of traces collectively sets\nthe MMIO address sub-range the MUX board will respond to\nthe nibbles of an address (0xFssn) will be set as so:\ns = the dipswitch setting\nn = least nibble selects the registers on this MUX\nthe bit order for the dip and traces is like so:"
+  (text "This dipswitch and set of traces collectively sets\nthe MMIO address sub-range the MUX board will respond to\nthe nibbles of an address (0xFhsn) will be set as so:\nhs = the dipswitch setting.\nn = least nibble selects the registers on this MUX\nthe bit order for the dip and traces is like so:"
     (at 161.29 340.36 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 79f270c0-2cd3-4898-963e-48b8dbffdc8e)
@@ -21265,6 +21269,11 @@
   (text "Length Select" (at 927.1 438.15 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7aec806b-900e-458f-9e60-92f825327f55)
+  )
+  (text "Note on original board the DIP switch is\nonly installed on rightmost\nfour bits (s), h is hardwired to 0x2\n(open open close open)\n"
+    (at 179.07 358.14 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7bd55a93-a50d-4d57-8382-6044f0cf702f)
   )
   (text "RxDi" (at 896.62 433.07 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -30512,7 +30521,7 @@
     (property "Value" "КР1533ИД3" (id 1) (at 262.89 320.04 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" (id 2) (at 264.16 323.85 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" (id 2) (at 264.16 323.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 264.16 323.85 0)
@@ -34615,7 +34624,7 @@
       (reference "U_E8") (unit 1) (value "74LS42") (footprint "Package_DIP:DIP-16_W7.62mm")
     )
     (path "/bbc09166-1642-4bfc-87bb-bf13e6998c85"
-      (reference "U_EB4") (unit 1) (value "КР1533ИД3") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical")
+      (reference "U_EB4") (unit 1) (value "КР1533ИД3") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical")
     )
     (path "/908892f4-4825-4506-9bd9-8072c2a8c5bc"
       (reference "U_F1") (unit 1) (value "74LS367") (footprint "Package_DIP:DIP-16_W7.62mm")
