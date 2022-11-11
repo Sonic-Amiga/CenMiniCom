@@ -28897,12 +28897,12 @@
     (pin "7" (uuid 199bbdba-7dfe-40fa-9976-fd34bdeea411))
   )
 
-  (symbol (lib_id "Device:Crystal") (at 172.72 229.87 0) (unit 1)
+  (symbol (lib_id "Device:Crystal") (at 172.72 229.87 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8cf77925-1e00-4e82-8d3f-ed9eca0aa9db)
     (property "Reference" "XTAL1" (id 0) (at 172.72 222.25 0))
     (property "Value" "Crystal" (id 1) (at 172.72 224.79 0))
-    (property "Footprint" "Crystal:Crystal_HC18-U_Vertical" (id 2) (at 172.72 229.87 0)
+    (property "Footprint" "Crystal:Crystal_HC49-U_Horizontal" (id 2) (at 172.72 229.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 172.72 229.87 0)
@@ -34808,7 +34808,7 @@
       (reference "U_LL8") (unit 1) (value "SN75150") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
     (path "/8cf77925-1e00-4e82-8d3f-ed9eca0aa9db"
-      (reference "XTAL1") (unit 1) (value "Crystal") (footprint "Crystal:Crystal_HC18-U_Vertical")
+      (reference "XTAL1") (unit 1) (value "Crystal") (footprint "Crystal:Crystal_HC49-U_Horizontal")
     )
   )
 )
