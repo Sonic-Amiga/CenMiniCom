@@ -30372,7 +30372,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "74LS154" (id 1) (at 266.7 379.73 90))
-    (property "Footprint" "Package_DIP:DIP-24_W15.24mm" (id 2) (at 266.7 379.73 0)
+    (property "Footprint" "Package_DIP:DIP-24_W7.62mm" (id 2) (at 266.7 379.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS154" (id 3) (at 266.7 379.73 0)
@@ -30509,7 +30509,9 @@
     (in_bom yes) (on_board yes)
     (uuid bbc09166-1642-4bfc-87bb-bf13e6998c85)
     (property "Reference" "U_EB4" (id 0) (at 251.46 320.04 90))
-    (property "Value" "КР1533ИД3" (id 1) (at 262.89 320.04 90))
+    (property "Value" "КР1533ИД3" (id 1) (at 262.89 320.04 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" (id 2) (at 264.16 323.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -34562,7 +34564,7 @@
       (reference "U_E3") (unit 5) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/b97dc0b2-4ace-4180-9932-17ae402ec50f"
-      (reference "U_E4") (unit 1) (value "74LS154") (footprint "Package_DIP:DIP-24_W15.24mm")
+      (reference "U_E4") (unit 1) (value "74LS154") (footprint "Package_DIP:DIP-24_W7.62mm")
     )
     (path "/303800f6-36b9-407b-b5bd-652fc580e358"
       (reference "U_E5") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
