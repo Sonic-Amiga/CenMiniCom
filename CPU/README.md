@@ -36,6 +36,7 @@ Russian characters in this file are using UTF-8 character set.
 |74LS138	|К555ИД7		|					|
 |74LS151	|К555КП7		|					|
 |74LS153	|К555КП2		|					|
+|74LS157	|К555КП16		|					|
 |74LS174	|К555ТМ9		|					|
 |74LS240	|К555АП3		|					|
 |74LS377	|К555ИР27		|					|
