@@ -363,7 +363,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "FrontPanel.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
