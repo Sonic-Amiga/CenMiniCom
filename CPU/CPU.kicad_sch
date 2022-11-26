@@ -34512,7 +34512,7 @@
     (property "Value" "100nF" (id 1) (at 1062.99 661.6762 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT" (id 2) (at 1060.45 660.4 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" (id 2) (at 1060.45 660.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 1060.45 660.4 0)
@@ -34578,7 +34578,7 @@
     (property "Value" "100nF" (id 1) (at 1069.34 684.5362 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT" (id 2) (at 1066.8 683.26 0)
+    (property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" (id 2) (at 1066.8 683.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 1066.8 683.26 0)
@@ -49121,7 +49121,7 @@
       (reference "C17") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT")
     )
     (path "/077e4de8-86f6-4f35-aee2-3bd824b045da"
-      (reference "C18") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT")
+      (reference "C18") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/55e75c13-072a-4aec-9bc6-b21da459b850"
       (reference "C19") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -49160,7 +49160,7 @@
       (reference "C30") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/094e65e7-3049-42a8-9da8-2d2f6d3b87e5"
-      (reference "C31") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT")
+      (reference "C31") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/a5cde810-ca8f-4d48-ac8a-3bea64b8b1d2"
       (reference "C32") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT")
