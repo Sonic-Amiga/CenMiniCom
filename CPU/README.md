@@ -20,6 +20,7 @@ Russian characters in this file are using UTF-8 character set.
 
 |Original       |Replacement            |Notes					|
 |---------------|-----------------------|---------------------------------------|
+|76161		|К556РТ18		|28C16 can be used, see assembly notes
 |AM2901		|1804ВС1		|					|
 |AM2907		|1804ВУ1		|					|
 |93427C		|КР556РТ11		|					|
@@ -62,6 +63,16 @@ and HC-49U works with resistors value of 510 ohm. HC-49S failed to start up comp
 resistors up to 2K.
 
 But your mileage may vary.
+
+3. Microcode ROMs.
+
+The original board uses 76161 2Kx8 fast ROMs, which can be hard to come by. There is an old Soviet
+К556РТ18 (K556RT18) one-time PROM, which is a drop-in replacement; but revision 2.0 can also accept
+more common 28C16 EEPROMs, for instance from Atmel, ST or Catalyst. However, check the datasheet
+for your ROMs so that they can operate at 5MHz (200 ns period). There are also UV-erasable 27C16 ROMs
+available, but their access time is 300 ms.
+
+ROM type is configured by JP2, JP3, R10, R11, R26. See notes on the schematic diagram.
 
 # Revision history.
 
