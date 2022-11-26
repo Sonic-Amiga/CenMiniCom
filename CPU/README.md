@@ -80,6 +80,7 @@ ROM type is configured by JP2, JP3, R10, R11, R26. See notes on the schematic di
 
 * Erratum E001: Incorrect DIP chip width is used for AM93l422 SRAM
 * Erratum E002: A connection is missing between U_M10 pins 4 and 5, this renders clock generator nonfunctional.
+* Errarum E003: U_A8 Pin 11  is not connected, should be Address.A8
 
 # Contacts
 
