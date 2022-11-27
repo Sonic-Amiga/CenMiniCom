@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Centurion backplane, short")
+    (rev "1.0")
+  )
+
   (lib_symbols
     (symbol "74xx:74LS04" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 0 1.27 0)
@@ -1688,6 +1693,7 @@
       )
     )
   )
+
 
   (junction (at 19.05 107.95) (diameter 0) (color 0 0 0 0)
     (uuid 008abaf4-b9f5-4e0e-983b-cf26774154d6)
@@ -5441,7 +5447,7 @@
   (symbol (lib_id "power:+5V") (at 236.22 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bd3178ab-c3d1-48e2-8657-6f2f9c3f17fc)
-    (property "Reference" "#PWR?" (id 0) (at 236.22 129.54 0)
+    (property "Reference" "#PWR0123" (id 0) (at 236.22 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 236.22 120.65 0))
@@ -5685,7 +5691,7 @@
     (property "Value" "3604" (id 1) (at 189.9794 19.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-24_W10.16mm" (id 2) (at 210.82 74.93 0)
+    (property "Footprint" "Package_DIP:DIP-24_W10.16mm_Socket" (id 2) (at 210.82 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 187.96 44.45 0)
@@ -5992,11 +5998,11 @@
     (path "/a63da674-10d6-413e-9d77-946c47b654fb"
       (reference "#PWR0122") (unit 1) (value "GND") (footprint "")
     )
+    (path "/bd3178ab-c3d1-48e2-8657-6f2f9c3f17fc"
+      (reference "#PWR0123") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/92741a45-2c80-49a0-b822-dc307fb28e0e"
       (reference "#PWR0124") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/bd3178ab-c3d1-48e2-8657-6f2f9c3f17fc"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
     )
     (path "/2fae2e1f-a694-4160-a6f3-1a6beed67fe7"
       (reference "J1") (unit 1) (value "Front panel") (footprint "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical")
@@ -6020,7 +6026,7 @@
       (reference "R4") (unit 1) (value "1K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/d8a6c379-193f-4aef-93b8-a8eb5ed3d15a"
-      (reference "U_A1") (unit 1) (value "3604") (footprint "Package_DIP:DIP-24_W10.16mm")
+      (reference "U_A1") (unit 1) (value "3604") (footprint "Package_DIP:DIP-24_W10.16mm_Socket")
     )
     (path "/c4c90f89-c7ff-49fa-b875-d46a735819c8"
       (reference "U_A2") (unit 1) (value "7425") (footprint "Package_DIP:DIP-14_W7.62mm")
