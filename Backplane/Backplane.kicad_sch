@@ -4386,7 +4386,7 @@
     (uuid 3c650ba4-b8b7-493f-9028-99f0e30e52ce)
     (property "Reference" "J2" (id 0) (at 256.54 21.59 0))
     (property "Value" "System bus" (id 1) (at 256.54 24.13 0))
-    (property "Footprint" "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical" (id 2) (at 255.27 58.42 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Horizontal" (id 2) (at 255.27 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 255.27 58.42 0)
@@ -5955,7 +5955,7 @@
       (reference "J1") (unit 1) (value "Front panel") (footprint "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical")
     )
     (path "/3c650ba4-b8b7-493f-9028-99f0e30e52ce"
-      (reference "J2") (unit 1) (value "System bus") (footprint "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical")
+      (reference "J2") (unit 1) (value "System bus") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Horizontal")
     )
     (path "/2da09754-df0a-400a-aca6-b8f5a82d0ae3"
       (reference "R1") (unit 1) (value "220") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
