@@ -16,34 +16,6 @@ original chips (see table below)
 
 See git log for more verbose history
 
-Russian characters in this file are using UTF-8 character set.
-
-|Original       |Replacement            |Notes					|
-|---------------|-----------------------|---------------------------------------|
-|76161		|К556РТ18		|28C16 can be used, see assembly notes
-|AM2901		|1804ВС1		|					|
-|AM2907		|1804ВУ1		|					|
-|93427C		|КР556РТ11		|					|
-|AM2907		|1804BA2		|Not a precise analog; actually AM2908	|
-|AM93l422	|КМ185РУ7А		|					|
-|74LS00		|К555ЛА3		|					|
-|74LS02		|К555ЛЕ1		|					|
-|74LS10		|К555ЛА4		|					|
-|74LS20		|К555ЛА1		|					|
-|74LS30		|К555ЛА2		|					|
-|74LS37		|К555ЛА12		|					|
-|74LS38		|К555ЛА13		|					|
-|74LS74		|К555ТМ2		|					|
-|74LS138	|К555ИД7		|					|
-|74LS151	|К555КП7		|					|
-|74LS153	|К555КП2		|					|
-|74LS157	|К555КП16		|					|
-|74LS174	|К555ТМ9		|					|
-|74LS240	|К555АП3		|					|
-|74LS377	|К555ИР27		|					|
-|74LS379	|КМ555ТМ10		|					|
-|74LS669	|74LS169, К555ИЕ17	|					|
-
 # Assembly notes
 
 1. Power lines
@@ -73,6 +45,47 @@ for your ROMs so that they can operate at 5MHz (200 ns period). There are also U
 available, but their access time is 300 ms.
 
 ROM type is configured by JP2, JP3, R10, R11, R26. See notes on the schematic diagram.
+
+4. Chip analogs.
+
+Since i live in Russia, russian 555 series is more accessible than original Western 74 series.
+Additionally some specific part can be hard to obtain here. Therefore below i have composed a
+list of all possible replacements. Russian characters in this file are using UTF-8 character set.
+
+|Original       |Replacement            |Notes					|
+|---------------|-----------------------|---------------------------------------|
+|76161		|К556РТ18		|28C16 can be used, see assembly notes
+|AM2901		|1804ВС1		|					|
+|AM2907		|1804ВУ1		|					|
+|93427C		|КР556РТ11		|					|
+|AM2907		|1804BA2		|Not a precise analog; actually AM2908	|
+|AM93l422	|КМ185РУ7А		|					|
+|74LS00		|К555ЛА3		|					|
+|74LS02		|К555ЛЕ1		|					|
+|74LS10		|К555ЛА4		|					|
+|74LS20		|К555ЛА1		|					|
+|74LS30		|К555ЛА2		|					|
+|74LS37		|К555ЛА12		|					|
+|74LS38		|К555ЛА13		|					|
+|74LS74		|К555ТМ2		|					|
+|74LS138	|К555ИД7		|					|
+|74LS151	|К555КП7		|					|
+|74LS153	|К555КП2		|					|
+|74LS157	|К555КП16		|					|
+|74LS173	|К555ИР15		|					|
+|74LS174	|К555ТМ9		|					|
+|74LS240	|К555АП3		|					|
+|74LS244	|К555АП5		|					|
+|74LS253	|К555КП12		|					|
+|74LS259	|К555ИР30		|					|
+|74LS374	|К555ИР23		|					|
+|74LS368	|К571ХЛ4		|					|
+|74LS377	|К555ИР27		|					|
+|74LS379	|КМ555ТМ10		|					|
+|74LS669	|74LS169, К555ИЕ17	|					|
+
+Of course i am not mentioning some trivial upgrades like using 74HCT series instead of 74LS. But be
+careful with timings since certain gates, especially in clock circuits, are used as delay lines.
 
 # Revision history.
 
