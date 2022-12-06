@@ -20868,7 +20868,7 @@
     (uuid 1e15b1c8-a9d9-462f-9867-83217b9bded8)
   )
   (text "this gate goes high when:\n0xnn0n is accessed\ndecoding the address common to a bank of MUX boards"
-    (at 81.28 473.71 0)
+    (at 81.28 473.71 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 1e52c2e6-5ac2-445b-a9f4-273568de615a)
   )
@@ -21036,7 +21036,7 @@
     (uuid 45e9a47f-9b57-40ec-820d-fcf803fe1a4b)
   )
   (text "IPL register\nCP is required to load the FF\n~{PE} is a shift (hi) or load (lo) signal\nJ/K are N/C so ~{PE} must always be asserted"
-    (at 81.28 180.34 0)
+    (at 81.28 180.34 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 466da330-5147-4a20-a6f2-5279264a9197)
   )
@@ -21113,7 +21113,7 @@
     (uuid 587bcf70-0c03-4e41-b610-409c5b09caaf)
   )
   (text "U_B2B matches the high nibble including ~{A_{15}}\nwhich on the CPU6, places the device in\nthe 0x3Fnnn memory range\nfor older buses, it's just 0xFnnn"
-    (at 73.66 374.65 0)
+    (at 73.66 374.65 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 589c345a-b4ae-430c-bbe4-409d3985bd66)
   )
@@ -24891,7 +24891,7 @@
     (property "Value" "1000uF" (id 1) (at 803.91 485.521 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (id 2) (at 801.0652 488.95 0)
+    (property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal" (id 2) (at 801.0652 488.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 800.1 485.14 0)
@@ -25812,7 +25812,7 @@
     (property "Value" "1000uF" (id 1) (at 787.4 485.521 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (id 2) (at 784.5552 488.95 0)
+    (property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal" (id 2) (at 784.5552 488.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 783.59 485.14 0)
@@ -28466,7 +28466,7 @@
     (property "Value" "1000uF" (id 1) (at 822.96 485.521 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (id 2) (at 820.1152 488.95 0)
+    (property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal" (id 2) (at 820.1152 488.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 819.15 485.14 0)
@@ -31356,7 +31356,7 @@
     (property "Value" "1000uF" (id 1) (at 822.96 493.141 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" (id 2) (at 820.1152 496.57 0)
+    (property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal" (id 2) (at 820.1152 496.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 819.15 492.76 0)
@@ -34060,13 +34060,13 @@
       (reference "C7") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/81dc8f9e-dd81-4ce0-a55c-2233abc8a643"
-      (reference "C8") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm")
+      (reference "C8") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal")
     )
     (path "/700b4e1d-0e7c-4676-a642-620e8cfd527d"
       (reference "C9") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/cc433d30-73fc-4018-ac68-bb2c058cc5e9"
-      (reference "C10") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm")
+      (reference "C10") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal")
     )
     (path "/91d42fac-90a6-4a10-89bb-f0296fc30e29"
       (reference "C11") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -34093,7 +34093,7 @@
       (reference "C18") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/3590fe11-f3ef-4623-adbf-cd3168d0b94d"
-      (reference "C20") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm")
+      (reference "C20") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal")
     )
     (path "/0100664a-0ce5-4ad5-a7d8-7afad5973822"
       (reference "C21") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
@@ -34120,7 +34120,7 @@
       (reference "C28") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/17f3a728-3a92-4366-9cf1-82dbfd5924f6"
-      (reference "C29") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm")
+      (reference "C29") (unit 1) (value "1000uF") (footprint "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal")
     )
     (path "/abfc0a8c-a849-4ad1-b0b5-5e7c3536fcf4"
       (reference "C31") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
