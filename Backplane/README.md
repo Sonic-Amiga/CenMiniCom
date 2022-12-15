@@ -40,6 +40,12 @@ Alternatively, an IDC-50 connector can be installed with a flat ribbon cable, go
 (this will be my implementation). Sorry, due to a lack of time i don't have a design for the second PCB,
 but i would be happy if someone contributes.
 
+# Revision history.
+
+28.11.2022 - rev 1.0
+
+* Erratum E001: Incorrect DIP chip width is used for 3604
+
 # Contacts
 
 Please direct all questions to pavel_fedin@mail.ru
