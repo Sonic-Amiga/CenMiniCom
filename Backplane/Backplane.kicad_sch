@@ -5654,7 +5654,7 @@
     (property "Value" "3604" (id 1) (at 189.9794 19.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-24_W15.24mm" (id 2) (at 210.82 74.93 0)
+    (property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket" (id 2) (at 210.82 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 187.96 44.45 0)
@@ -5970,7 +5970,7 @@
       (reference "R4") (unit 1) (value "1K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/d8a6c379-193f-4aef-93b8-a8eb5ed3d15a"
-      (reference "U_A1") (unit 1) (value "3604") (footprint "Package_DIP:DIP-24_W15.24mm")
+      (reference "U_A1") (unit 1) (value "3604") (footprint "Package_DIP:DIP-24_W15.24mm_Socket")
     )
     (path "/c4c90f89-c7ff-49fa-b875-d46a735819c8"
       (reference "U_A2") (unit 1) (value "7425") (footprint "Package_DIP:DIP-14_W7.62mm")
