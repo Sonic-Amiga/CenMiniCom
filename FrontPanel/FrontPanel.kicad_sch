@@ -5639,12 +5639,12 @@
   )
 
   (symbol (lib_id "Device:C") (at 129.54 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid faabe0a6-0893-4db9-9a88-dd51dd4ecae8)
     (property "Reference" "C4" (id 0) (at 133.35 76.1999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C" (id 1) (at 133.35 78.7399 0)
+    (property "Value" "100n" (id 1) (at 132.08 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" (id 2) (at 130.5052 81.28 0)
@@ -5763,7 +5763,7 @@
       (reference "C3") (unit 1) (value "10uF 50V") (footprint "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal")
     )
     (path "/faabe0a6-0893-4db9-9a88-dd51dd4ecae8"
-      (reference "C4") (unit 1) (value "C") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
+      (reference "C4") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
     )
     (path "/1d1adde6-10ec-445c-bd3e-c6903ed0b715"
       (reference "C5") (unit 1) (value "100n") (footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm")
