@@ -3864,7 +3864,7 @@
     (property "Value" "74LS20" (id 1) (at 218.44 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 218.44 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 218.44 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS20" (id 3) (at 218.44 138.43 0)
@@ -3909,7 +3909,7 @@
     (property "Value" "74LS04" (id 1) (at 264.16 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 264.16 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 264.16 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (id 3) (at 264.16 138.43 0)
@@ -3940,7 +3940,7 @@
     (property "Value" "74LS38" (id 1) (at 276.86 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 275.59 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 275.59 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38" (id 3) (at 275.59 138.43 0)
@@ -4046,7 +4046,7 @@
     (uuid 12c59941-af50-4c39-8319-7d188e37846b)
     (property "Reference" "U_B5" (id 0) (at 35.56 36.83 0))
     (property "Value" "74LS38" (id 1) (at 35.56 39.37 0))
-    (property "Footprint" "" (id 2) (at 27.94 41.91 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 27.94 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38" (id 3) (at 27.94 41.91 0)
@@ -4104,7 +4104,7 @@
     (property "Value" "74LS04" (id 1) (at 229.87 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 229.87 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 229.87 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (id 3) (at 229.87 138.43 0)
@@ -4151,7 +4151,7 @@
     (property "Value" "74LS04" (id 1) (at 241.3 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 241.3 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 241.3 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (id 3) (at 241.3 138.43 0)
@@ -4732,7 +4732,7 @@
     (property "Value" "74LS38" (id 1) (at 196.85 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 195.58 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 195.58 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38" (id 3) (at 195.58 138.43 0)
@@ -4975,7 +4975,7 @@
     (property "Value" "74LS04" (id 1) (at 252.73 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 252.73 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 252.73 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04" (id 3) (at 252.73 138.43 0)
@@ -5257,7 +5257,7 @@
     (property "Value" "74LS38" (id 1) (at 208.28 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 207.01 138.43 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm" (id 2) (at 207.01 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38" (id 3) (at 207.01 138.43 0)
@@ -5991,7 +5991,7 @@
       (reference "U_A3") (unit 4) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/6309c89a-c6ba-4602-bca2-8e479f8b92c3"
-      (reference "U_A3") (unit 5) (value "74LS38") (footprint "")
+      (reference "U_A3") (unit 5) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/e5fa9e11-948f-4ad8-b43d-b61fdaa8b7f2"
       (reference "U_A4") (unit 1) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6006,7 +6006,7 @@
       (reference "U_A4") (unit 4) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/ae6dc4a6-d7ec-4442-a64b-2aca8d4e9c59"
-      (reference "U_A4") (unit 5) (value "74LS38") (footprint "")
+      (reference "U_A4") (unit 5) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/75316ccb-fb98-4f82-bb56-50ebff116b4b"
       (reference "U_A5") (unit 1) (value "74LS20") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6015,7 +6015,7 @@
       (reference "U_A5") (unit 2) (value "74LS20") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/0490e272-c954-4c42-ad42-f98e6fdba02c"
-      (reference "U_A5") (unit 3) (value "74LS20") (footprint "")
+      (reference "U_A5") (unit 3) (value "74LS20") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/fbdd1d1c-a07c-4087-a34f-9c3a5a21399d"
       (reference "U_B1") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6036,7 +6036,7 @@
       (reference "U_B1") (unit 6) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/1ba543e9-937a-4e45-b282-36933a47713d"
-      (reference "U_B1") (unit 7) (value "74LS04") (footprint "")
+      (reference "U_B1") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/5b0a6592-1467-451a-b5fe-791564725bb2"
       (reference "U_B2") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6057,7 +6057,7 @@
       (reference "U_B2") (unit 6) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/208ed32a-087c-4898-a889-f51e7a5324c1"
-      (reference "U_B2") (unit 7) (value "74LS04") (footprint "")
+      (reference "U_B2") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/43a39be8-9e70-4a43-8649-b5aa7a301401"
       (reference "U_B3") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6078,7 +6078,7 @@
       (reference "U_B3") (unit 6) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/83855965-ad11-4099-a355-f928c2a766db"
-      (reference "U_B3") (unit 7) (value "74LS04") (footprint "")
+      (reference "U_B3") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/803747cb-ba89-45ea-8e6c-708115df2480"
       (reference "U_B4") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6099,13 +6099,13 @@
       (reference "U_B4") (unit 6) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/0a3116f4-a3c0-4992-8dd8-a4fef7bcad72"
-      (reference "U_B4") (unit 7) (value "74LS04") (footprint "")
+      (reference "U_B4") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/a72a490c-9c44-4a7c-978c-c6e2c5a242a3"
       (reference "U_B5") (unit 1) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/12c59941-af50-4c39-8319-7d188e37846b"
-      (reference "U_B5") (unit 2) (value "74LS38") (footprint "")
+      (reference "U_B5") (unit 2) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/79ef2503-8cd4-45df-addd-94203ceb7a69"
       (reference "U_B5") (unit 3) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -6114,7 +6114,7 @@
       (reference "U_B5") (unit 4) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/0b8f5189-1c1f-49aa-ae3c-4ac50debfffc"
-      (reference "U_B5") (unit 5) (value "74LS38") (footprint "")
+      (reference "U_B5") (unit 5) (value "74LS38") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
   )
 )
