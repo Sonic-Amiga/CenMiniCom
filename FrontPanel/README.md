@@ -16,6 +16,14 @@ Russian characters in this file are using UTF-8 character set.
 |74LS123	|555АГ3		        |
 |NE555		|К1441ВИ1		|
 
+# Revision history.
+
+30.11.2022 - rev 1.0
+
+Current - rev 2.0
+- Added decoupling capacitors
+- Better GND separation
+
 # Contacts
 
 Please direct all questions to pavel_fedin@mail.ru
