@@ -25,6 +25,7 @@ Current - rev 2.0
 - Added decoupling capacitors
 - Better GND separation
 - Narrowed down while maintaining compatibility with original, mounting holes are kept in the same location
+- Adjusted J3 footprint so that MPW-5 connector fits in
 
 # Contacts
 
