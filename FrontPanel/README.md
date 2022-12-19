@@ -21,8 +21,10 @@ Russian characters in this file are using UTF-8 character set.
 30.11.2022 - rev 1.0
 
 Current - rev 2.0
+
 - Added decoupling capacitors
 - Better GND separation
+- Narrowed down while maintaining compatibility with original, mounting holes are kept in the same location
 
 # Contacts
 
