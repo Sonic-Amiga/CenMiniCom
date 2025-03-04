@@ -24,6 +24,7 @@ please contact mla_licensing@microchip.com
 #include "usb_device_hid.h"
 
 #include "app_device_custom_hid.h"
+#include "pio_bus.h"
 
 
 
@@ -33,6 +34,7 @@ MAIN_RETURN main(void)
 
     USBDeviceInit();
     USBDeviceAttach();
+    PIOBus_Init();
 
     while(1)
     {
@@ -53,6 +55,7 @@ MAIN_RETURN main(void)
         #endif
 
         //Application specific tasks
+        APP_DeviceCustomHIDTasks();
 
     }//end while
 }//end main

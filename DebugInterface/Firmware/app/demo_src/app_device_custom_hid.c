@@ -157,6 +157,10 @@ void APP_DeviceCustomHIDTasks()
                 data = PIOBus_Read(ReceivedDataBuffer[1]);
                 reply(ReceivedDataBuffer[0], data);
                 break;
+                
+            default:
+                reply('?', 0x3F);
+                break;
         }
 
         //Re-arm the OUT endpoint, so we can receive the next OUT data packet 

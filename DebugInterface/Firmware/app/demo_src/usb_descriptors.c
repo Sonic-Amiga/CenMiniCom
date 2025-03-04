@@ -229,10 +229,10 @@ sizeof(sd001),USB_DESCRIPTOR_STRING,
 }};
 
 //Product string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[22];}sd002={
+const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[19];}sd002={
 sizeof(sd002),USB_DESCRIPTOR_STRING,
-{'S','i','m','p','l','e',' ','H','I','D',' ',
-'D','e','v','i','c','e',' ','D','e','m','o'
+{'P','a','r','a','l','l','e','l',' ','b','u',
+'s',' ','b','r','i','d','g','e'
 }};
 
 //Class specific descriptor - HID 

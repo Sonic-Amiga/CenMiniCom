@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../demo_src/usb_descriptors.c ../demo_src/usb_events.c ../demo_src/main.c system.c ../demo_src/app_device_custom_hid.c ../demo_src/pio_bus.c ../../framework/usb/src/usb_device.c ../../framework/usb/src/usb_device_hid.c
+SOURCEFILES_QUOTED_IF_SPACED=../demo_src/usb_descriptors.c ../demo_src/usb_events.c ../../framework/usb/src/usb_device.c ../../framework/usb/src/usb_device_hid.c ../demo_src/main.c system.c ../demo_src/app_device_custom_hid.c ../demo_src/pio_bus.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1 ${OBJECTDIR}/_ext/300881143/usb_events.p1 ${OBJECTDIR}/_ext/300881143/main.p1 ${OBJECTDIR}/system.p1 ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1 ${OBJECTDIR}/_ext/300881143/pio_bus.p1 ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1.d ${OBJECTDIR}/_ext/300881143/usb_events.p1.d ${OBJECTDIR}/_ext/300881143/main.p1.d ${OBJECTDIR}/system.p1.d ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1.d ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1 ${OBJECTDIR}/_ext/300881143/usb_events.p1 ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ${OBJECTDIR}/_ext/300881143/main.p1 ${OBJECTDIR}/system.p1 ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1 ${OBJECTDIR}/_ext/300881143/pio_bus.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1.d ${OBJECTDIR}/_ext/300881143/usb_events.p1.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d ${OBJECTDIR}/_ext/300881143/main.p1.d ${OBJECTDIR}/system.p1.d ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1.d ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1 ${OBJECTDIR}/_ext/300881143/usb_events.p1 ${OBJECTDIR}/_ext/300881143/main.p1 ${OBJECTDIR}/system.p1 ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1 ${OBJECTDIR}/_ext/300881143/pio_bus.p1 ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1
+OBJECTFILES=${OBJECTDIR}/_ext/300881143/usb_descriptors.p1 ${OBJECTDIR}/_ext/300881143/usb_events.p1 ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ${OBJECTDIR}/_ext/300881143/main.p1 ${OBJECTDIR}/system.p1 ${OBJECTDIR}/_ext/300881143/app_device_custom_hid.p1 ${OBJECTDIR}/_ext/300881143/pio_bus.p1
 
 # Source Files
-SOURCEFILES=../demo_src/usb_descriptors.c ../demo_src/usb_events.c ../demo_src/main.c system.c ../demo_src/app_device_custom_hid.c ../demo_src/pio_bus.c ../../framework/usb/src/usb_device.c ../../framework/usb/src/usb_device_hid.c
+SOURCEFILES=../demo_src/usb_descriptors.c ../demo_src/usb_events.c ../../framework/usb/src/usb_device.c ../../framework/usb/src/usb_device_hid.c ../demo_src/main.c system.c ../demo_src/app_device_custom_hid.c ../demo_src/pio_bus.c
 
 
 
@@ -104,6 +104,22 @@ ${OBJECTDIR}/_ext/300881143/usb_events.p1: ../demo_src/usb_events.c  nbproject/M
 	@-${MV} ${OBJECTDIR}/_ext/300881143/usb_events.d ${OBJECTDIR}/_ext/300881143/usb_events.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/300881143/usb_events.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/_ext/1354599976/usb_device.p1: ../../framework/usb/src/usb_device.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ../../framework/usb/src/usb_device.c 
+	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1: ../../framework/usb/src/usb_device_hid.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ../../framework/usb/src/usb_device_hid.c 
+	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/_ext/300881143/main.p1: ../demo_src/main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/300881143" 
 	@${RM} ${OBJECTDIR}/_ext/300881143/main.p1.d 
@@ -136,22 +152,6 @@ ${OBJECTDIR}/_ext/300881143/pio_bus.p1: ../demo_src/pio_bus.c  nbproject/Makefil
 	@-${MV} ${OBJECTDIR}/_ext/300881143/pio_bus.d ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1354599976/usb_device.p1: ../../framework/usb/src/usb_device.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ../../framework/usb/src/usb_device.c 
-	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1: ../../framework/usb/src/usb_device_hid.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ../../framework/usb/src/usb_device_hid.c 
-	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 else
 ${OBJECTDIR}/_ext/300881143/usb_descriptors.p1: ../demo_src/usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/300881143" 
@@ -168,6 +168,22 @@ ${OBJECTDIR}/_ext/300881143/usb_events.p1: ../demo_src/usb_events.c  nbproject/M
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/300881143/usb_events.p1 ../demo_src/usb_events.c 
 	@-${MV} ${OBJECTDIR}/_ext/300881143/usb_events.d ${OBJECTDIR}/_ext/300881143/usb_events.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/300881143/usb_events.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1354599976/usb_device.p1: ../../framework/usb/src/usb_device.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ../../framework/usb/src/usb_device.c 
+	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1: ../../framework/usb/src/usb_device_hid.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ../../framework/usb/src/usb_device_hid.c 
+	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/_ext/300881143/main.p1: ../demo_src/main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/_ext/300881143" 
@@ -200,22 +216,6 @@ ${OBJECTDIR}/_ext/300881143/pio_bus.p1: ../demo_src/pio_bus.c  nbproject/Makefil
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/300881143/pio_bus.p1 ../demo_src/pio_bus.c 
 	@-${MV} ${OBJECTDIR}/_ext/300881143/pio_bus.d ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/300881143/pio_bus.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/_ext/1354599976/usb_device.p1: ../../framework/usb/src/usb_device.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device.p1 ../../framework/usb/src/usb_device.c 
-	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device.d ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1: ../../framework/usb/src/usb_device_hid.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1354599976" 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -maddrqual=require -xassembler-with-cpp -I"../demo_src" -I"../../framework/usb/inc" -I"." -I"../../framework/usb" -mwarn=0 -Wa,-a -DXPRJ_PIC18F2550=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1 ../../framework/usb/src/usb_device_hid.c 
-	@-${MV} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.d ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1354599976/usb_device_hid.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
