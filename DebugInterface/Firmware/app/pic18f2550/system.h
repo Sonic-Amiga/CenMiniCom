@@ -23,10 +23,13 @@ please contact mla_licensing@microchip.com
 #include <xc.h>
 #include <stdbool.h>
 
+#include "usb_protocol.h"
+
 // Tuned for PIC18F2550, looked up in one of examples on the web
 #define FIXED_ADDRESS_MEMORY
-#define HID_CUSTOM_OUT_DATA_BUFFER_ADDRESS __at(0x500)
-#define HID_CUSTOM_IN_DATA_BUFFER_ADDRESS __at(0x540)
+#define USB_BUFFER_BASE 0x500
+#define HID_CUSTOM_OUT_DATA_BUFFER_ADDRESS __at(USB_BUFFER_BASE)
+#define HID_CUSTOM_IN_DATA_BUFFER_ADDRESS __at(USB_BUFFER_BASE + CMD_PACKET_LENGTH)
 
 #define MAIN_RETURN void
 

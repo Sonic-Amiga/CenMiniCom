@@ -142,6 +142,7 @@ state according to the definition in the USB specification.
 /** INCLUDES *******************************************************/
 #include "usb.h"
 #include "usb_device_hid.h"
+#include "usb_protocol.h"
 
 /** CONSTANTS ******************************************************/
 #if defined(__18CXX)
@@ -204,7 +205,7 @@ const uint8_t configDescriptor1[]={
     USB_DESCRIPTOR_ENDPOINT,    //Endpoint Descriptor
     CUSTOM_DEVICE_HID_EP | _EP_IN,                   //EndpointAddress
     _INTERRUPT,                       //Attributes
-    0x40,0x00,                  //size
+    CMD_PACKET_LENGTH,0x00,      //size
     0x01,                        //Interval
 
     /* Endpoint Descriptor */
@@ -212,7 +213,7 @@ const uint8_t configDescriptor1[]={
     USB_DESCRIPTOR_ENDPOINT,    //Endpoint Descriptor
     CUSTOM_DEVICE_HID_EP | _EP_OUT,                   //EndpointAddress
     _INTERRUPT,                       //Attributes
-    0x40,0x00,                  //size
+    CMD_PACKET_LENGTH,0x00,     //size
     0x01                        //Interval
 };
 

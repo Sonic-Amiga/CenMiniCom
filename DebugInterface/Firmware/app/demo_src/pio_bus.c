@@ -12,7 +12,6 @@
 #define CTL_nRD (1 << 2)
 
 #define CTL_IDLE  (CTL_nWR | CTL_nRD)
-#define CTL_RESET (CTL_RST | CTL_IDLE)
 #define CTL_WR    (CTL_nRD)
 #define CTL_RD    (CTL_nWR)
 
@@ -28,27 +27,30 @@ void PIOBus_Init(void)
     ADDR_PORT = 0;
     DATA_PORT = 0;
 
-    PIOBus_Reset();
+    PIOBus_Reset(1);
     
 	TRISA = TRIS_OUT;
 	TRISB = TRIS_IN;
 	TRISC = TRIS_OUT;
 }
 
-void PIOBus_Reset(void)
+void PIOBus_Reset(unsigned char state)
 {
-    reset = 1;
-    CTRL_PORT = CTL_RESET;
+    unsigned char ctl = CTL_IDLE;
+
+    if (state)
+        ctl |= CTL_RST;
+
+    reset = state;
+    CTRL_PORT = ctl;
 }
 
 static void release(void)
 {
-    if (!reset)
-        return;
-    
-    PORTC = CTL_IDLE;
-    reset = 0;
-    __delay_us(1);
+    if (reset) {
+        PIOBus_Reset(0);
+        __delay_us(1);
+    }
 }
 
 void PIOBus_Write(unsigned char addr, unsigned char data)

@@ -17,6 +17,7 @@
       <itemPath>./system.h</itemPath>
       <itemPath>../demo_src/app_device_custom_hid.h</itemPath>
       <itemPath>../demo_src/pio_bus.h</itemPath>
+      <itemPath>../demo_src/usb_protocol.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
