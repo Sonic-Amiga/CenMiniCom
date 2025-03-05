@@ -7,6 +7,10 @@
 #define DATA_PORT PORTB
 #define CTRL_PORT PORTC
 
+#define ADDR_DIR  TRISA
+#define DATA_DIR  TRISB
+#define CTRL_DIR  TRISC
+
 #define CTL_RST (1 << 0)
 #define CTL_nWR (1 << 1)
 #define CTL_nRD (1 << 2)
@@ -28,10 +32,10 @@ void PIOBus_Init(void)
     DATA_PORT = 0;
 
     PIOBus_Reset(1);
-    
-	TRISA = TRIS_OUT;
-	TRISB = TRIS_IN;
-	TRISC = TRIS_OUT;
+
+	ADDR_DIR = TRIS_OUT;
+	DATA_DIR = TRIS_IN;
+	CTRL_DIR = TRIS_OUT;
 }
 
 void PIOBus_Reset(unsigned char state)
@@ -49,17 +53,16 @@ static void release(void)
 {
     if (reset) {
         PIOBus_Reset(0);
-        __delay_us(1);
     }
 }
 
 void PIOBus_Write(unsigned char addr, unsigned char data)
 {
     release();
-    TRISB = TRIS_OUT;
-            
+    DATA_DIR = TRIS_OUT;
     ADDR_PORT = addr;
     DATA_PORT = data;
+    __delay_us(1);
     CTRL_PORT = CTL_WR;
     __delay_us(1);
     CTRL_PORT = CTL_IDLE;
@@ -71,10 +74,10 @@ unsigned char PIOBus_Read(unsigned char addr)
     unsigned char ret;
 
     release();
-    TRISB = TRIS_IN;
-            
+    DATA_DIR = TRIS_IN;  
     ADDR_PORT = addr;
-    CTRL_PORT = CTL_WR;
+    __delay_us(1);
+    CTRL_PORT = CTL_RD;
     __delay_us(1);
     ret = DATA_PORT;
     CTRL_PORT = CTL_IDLE;
