@@ -17875,7 +17875,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "ACT"
 			(at 396.494 230.124 90)
 			(effects
 				(font
@@ -24168,7 +24168,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "VUSB"
 			(at 403.098 230.124 90)
 			(effects
 				(font
@@ -24227,7 +24227,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ea008bac-7b63-4c51-b38d-4d3af25bea3e")
 		(property "Reference" "D3"
 			(at 246.38 272.0974 90)
@@ -24238,7 +24237,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "VCC"
 			(at 246.38 274.6374 90)
 			(effects
 				(font
@@ -24510,7 +24509,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "RST"
 			(at 256.54 274.6374 90)
 			(effects
 				(font
