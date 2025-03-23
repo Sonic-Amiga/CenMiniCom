@@ -36594,7 +36594,7 @@
 		)
 		(uuid "72b39815-76b5-422b-be3d-26c0ea894755")
 	)
-	(label "A13"
+	(label "A12"
 		(at 577.85 198.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -36682,7 +36682,7 @@
 		)
 		(uuid "76a737e4-4eb6-4f4f-8281-74bbe291a374")
 	)
-	(label "A14"
+	(label "A11"
 		(at 577.85 195.58 0)
 		(fields_autoplaced yes)
 		(effects
@@ -37980,7 +37980,7 @@
 		)
 		(uuid "b1cedb11-ca3b-4b80-ac9a-e3104f947ab4")
 	)
-	(label "A11"
+	(label "A14"
 		(at 577.85 203.2 0)
 		(fields_autoplaced yes)
 		(effects
@@ -38530,7 +38530,7 @@
 		)
 		(uuid "ce9d7adb-3c8c-45d1-afa7-b0f757d0db72")
 	)
-	(label "A12"
+	(label "A13"
 		(at 577.85 200.66 0)
 		(fields_autoplaced yes)
 		(effects
