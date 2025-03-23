@@ -44366,7 +44366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS38")
+		(lib_id "74xx:74LS08")
 		(at 725.17 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -44383,7 +44383,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS38"
+		(property "Value" "74LS08"
 			(at 725.1617 125.73 0)
 			(effects
 				(font
@@ -44400,7 +44400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38"
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
 			(at 725.17 132.08 0)
 			(effects
 				(font
@@ -44409,7 +44409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad Buffer 2-input NAND Open collector"
+		(property "Description" "Quad And2"
 			(at 725.17 132.08 0)
 			(effects
 				(font
@@ -47630,7 +47630,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS38")
+		(lib_id "74xx:74LS08")
 		(at 725.17 147.32 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -47647,7 +47647,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS38"
+		(property "Value" "74LS08"
 			(at 725.1617 140.97 0)
 			(effects
 				(font
@@ -47664,7 +47664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38"
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
 			(at 725.17 147.32 0)
 			(effects
 				(font
@@ -47673,7 +47673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad Buffer 2-input NAND Open collector"
+		(property "Description" "Quad And2"
 			(at 725.17 147.32 0)
 			(effects
 				(font
@@ -51582,37 +51582,37 @@
 			)
 		)
 		(pin "13"
-			(uuid "f9373a71-4e12-4cba-892d-b7ac2ffb897c")
+			(uuid "f9373a71-4e12-4cba-892d-b7ac2ffb897d")
 		)
 		(pin "1"
-			(uuid "fe0f293f-2e9f-4ff6-91a2-1e45ce6a9417")
+			(uuid "fe0f293f-2e9f-4ff6-91a2-1e45ce6a9418")
 		)
 		(pin "10"
-			(uuid "e71c3171-0c6e-42a0-9875-b74672bd18b9")
+			(uuid "e71c3171-0c6e-42a0-9875-b74672bd18ba")
 		)
 		(pin "14"
-			(uuid "7c4bceab-b423-4ea2-87a0-596b84409b4e")
+			(uuid "7c4bceab-b423-4ea2-87a0-596b84409b4f")
 		)
 		(pin "2"
-			(uuid "21bcb044-6fbd-4b79-b24f-97f93a2c8df3")
+			(uuid "21bcb044-6fbd-4b79-b24f-97f93a2c8df4")
 		)
 		(pin "12"
-			(uuid "58d7edd5-4239-4dd7-8224-7609b389f768")
+			(uuid "58d7edd5-4239-4dd7-8224-7609b389f769")
 		)
 		(pin "3"
-			(uuid "a7bb3f91-a3aa-405d-a521-895073bb2ddf")
+			(uuid "a7bb3f91-a3aa-405d-a521-895073bb2de0")
 		)
 		(pin "4"
-			(uuid "f7baff00-da8f-46f7-990c-d663f213fb68")
+			(uuid "f7baff00-da8f-46f7-990c-d663f213fb69")
 		)
 		(pin "5"
-			(uuid "1b90be98-0e7e-4292-8d1f-9fac8de0cf53")
+			(uuid "1b90be98-0e7e-4292-8d1f-9fac8de0cf54")
 		)
 		(pin "7"
-			(uuid "e6f905ea-92a2-471f-9f9a-499866f97891")
+			(uuid "e6f905ea-92a2-471f-9f9a-499866f97892")
 		)
 		(pin "8"
-			(uuid "3ef155c2-904e-48e7-89e9-d3b9a628240e")
+			(uuid "3ef155c2-904e-48e7-89e9-d3b9a628240f")
 		)
 		(instances
 			(project "Diag"
