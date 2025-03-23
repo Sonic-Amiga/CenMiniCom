@@ -12046,142 +12046,6 @@
 				)
 			)
 		)
-		(symbol "Device:C"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Polarized"
 			(pin_numbers hide)
 			(pin_names
@@ -14725,24 +14589,22 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+		(symbol "Switch:SW_Push_DPDT"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "SW_Push_DPDT"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -14767,7 +14629,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Description" "Momentary Switch, dual pole double throw"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14776,7 +14638,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "ki_keywords" "switch dual-pole double-throw spdt ON-ON"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14785,10 +14647,57 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
+			(symbol "SW_Push_DPDT_0_0"
 				(circle
-					(center -2.032 0)
+					(center -2.032 -5.08)
 					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_DPDT_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -4.826) (xy 2.3368 -3.0988)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -14799,7 +14708,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -1.524 5.334) (xy 2.3368 7.0612)
 					)
 					(stroke
 						(width 0)
@@ -14811,7 +14720,55 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy 0 -2.286) (xy 0 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.556) (xy 0 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 7.874) (xy 0 6.096)
 					)
 					(stroke
 						(width 0)
@@ -14822,7 +14779,7 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
+					(center 2.032 -2.54)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -14830,12 +14787,36 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 2.032 7.62)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_DPDT_1_1"
+				(rectangle
+					(start -3.175 8.89)
+					(end 3.175 -8.89)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 7.62 180)
 					(length 2.54)
-					(name "1"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14851,9 +14832,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 5.08 0)
 					(length 2.54)
-					(name "2"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14861,6 +14842,78 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -15610,10 +15663,22 @@
 		(uuid "06ff0f83-50de-4c9d-9e20-009c2f63464a")
 	)
 	(junction
+		(at 623.57 373.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "090c06d5-1668-4de9-b44e-fc1c7359e42d")
+	)
+	(junction
 		(at 303.53 495.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0aad2a5b-5c1f-4540-b217-73218c128611")
+	)
+	(junction
+		(at 722.63 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f1fa61d-fb55-4d2a-bd37-90c698b34cba")
 	)
 	(junction
 		(at 661.67 48.26)
@@ -15736,12 +15801,6 @@
 		(uuid "24c849b1-d0d1-4ce4-a3a9-3bcde1f7b9d3")
 	)
 	(junction
-		(at 722.63 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2518044c-71a1-483e-918f-c77dc71b2299")
-	)
-	(junction
 		(at 33.02 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -15772,6 +15831,12 @@
 		(uuid "2b374762-db4b-47df-947e-0c6bd56f577c")
 	)
 	(junction
+		(at 59.69 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cc8c1a8-d037-49ff-b072-f7972f9705ab")
+	)
+	(junction
 		(at 59.69 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -15788,6 +15853,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ba163a3-1d38-475e-9c2d-37a435d42415")
+	)
+	(junction
+		(at 34.29 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3db5ee2c-69a2-4ac2-9291-9f03bb00b4aa")
 	)
 	(junction
 		(at 420.37 243.84)
@@ -15982,12 +16053,6 @@
 		(uuid "6beb5f9c-239d-49f4-b82b-18a35f59fe8e")
 	)
 	(junction
-		(at 59.69 219.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c814e65-8956-4be9-a76c-418730165e8f")
-	)
-	(junction
 		(at 661.67 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16148,12 +16213,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95b5f827-5582-4074-87d3-4012be727721")
-	)
-	(junction
-		(at 722.63 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98388853-2030-45b6-9ca3-bbafc19718d8")
 	)
 	(junction
 		(at 166.37 318.77)
@@ -16564,6 +16623,12 @@
 		(uuid "f4ba0ff4-dccc-462a-b7f7-a62dda7a6177")
 	)
 	(junction
+		(at 722.63 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f530e60c-dd4d-4ed8-af1b-0d00d8fcef24")
+	)
+	(junction
 		(at 161.29 464.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16646,6 +16711,10 @@
 		(uuid "1c001254-9cae-4345-8b64-b032f7f150d4")
 	)
 	(no_connect
+		(at 36.83 218.44)
+		(uuid "1d753614-77a0-4d5a-b22d-ef30c066bbf6")
+	)
+	(no_connect
 		(at 681.99 322.58)
 		(uuid "1f04954b-74d7-42d0-9ba9-4a8a2ca4e4e8")
 	)
@@ -16720,6 +16789,10 @@
 	(no_connect
 		(at 107.95 231.14)
 		(uuid "73a45490-4865-4780-9bcf-4c5ac4975899")
+	)
+	(no_connect
+		(at 36.83 213.36)
+		(uuid "743d3d13-6735-41c5-87aa-5c08a1b0545b")
 	)
 	(no_connect
 		(at 623.57 236.22)
@@ -16804,6 +16877,10 @@
 	(no_connect
 		(at 694.69 284.48)
 		(uuid "d4270fc0-02a4-4ffb-bae5-2d09195c2093")
+	)
+	(no_connect
+		(at 46.99 215.9)
+		(uuid "d734336b-ccf5-4b43-8348-9595f4ee7a12")
 	)
 	(no_connect
 		(at 732.79 101.6)
@@ -20042,6 +20119,16 @@
 		)
 		(uuid "062720af-7610-41ad-a62c-d75b8e8de3e6")
 	)
+	(wire
+		(pts
+			(xy 623.57 370.84) (xy 623.57 373.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062d256b-caee-45e2-836d-ca55a607c1e6")
+	)
 	(bus
 		(pts
 			(xy 311.15 252.73) (xy 311.15 255.27)
@@ -20754,7 +20841,17 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 210.82) (xy 59.69 212.09)
+			(xy 702.31 22.86) (xy 681.99 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14462961-e72e-4c32-a497-85528377dc28")
+	)
+	(wire
+		(pts
+			(xy 59.69 210.82) (xy 59.69 218.44)
 		)
 		(stroke
 			(width 0)
@@ -21734,16 +21831,6 @@
 	)
 	(wire
 		(pts
-			(xy 681.99 22.86) (xy 702.31 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2692c98b-9b20-4819-88b4-53e720895312")
-	)
-	(wire
-		(pts
 			(xy 269.24 506.73) (xy 273.05 506.73)
 		)
 		(stroke
@@ -21871,16 +21958,6 @@
 			(type default)
 		)
 		(uuid "2a73db5e-ec4f-4147-9e1e-5cafc6c62fc0")
-	)
-	(wire
-		(pts
-			(xy 36.83 205.74) (xy 36.83 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a74bc9d-2ee0-4346-95cd-29f703719031")
 	)
 	(wire
 		(pts
@@ -22231,6 +22308,16 @@
 			(type default)
 		)
 		(uuid "2e53eb1e-f206-4a63-843e-72779e19a676")
+	)
+	(wire
+		(pts
+			(xy 722.63 22.86) (xy 702.31 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e6150e1-8ec8-4c83-bdbb-3f1cd6d213c3")
 	)
 	(wire
 		(pts
@@ -22602,6 +22689,16 @@
 		)
 		(uuid "351aab2f-c082-415a-83a4-93dccc92a76f")
 	)
+	(wire
+		(pts
+			(xy 36.83 208.28) (xy 34.29 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "351dadff-4022-402e-ba7f-b48c1f78ead4")
+	)
 	(bus
 		(pts
 			(xy 359.41 190.5) (xy 359.41 187.96)
@@ -22721,16 +22818,6 @@
 			(type default)
 		)
 		(uuid "366fe500-6618-49b1-9359-60767e1717d4")
-	)
-	(wire
-		(pts
-			(xy 59.69 219.71) (xy 36.83 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36ec2c35-2741-445e-a808-7dcb1164d5fa")
 	)
 	(wire
 		(pts
@@ -23011,16 +23098,6 @@
 			(type default)
 		)
 		(uuid "3c659b2d-467b-4c99-a196-c32c40fe3611")
-	)
-	(wire
-		(pts
-			(xy 702.31 22.86) (xy 722.63 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c764c62-bea0-4a7d-99cf-de0c8fad7284")
 	)
 	(wire
 		(pts
@@ -25724,16 +25801,6 @@
 	)
 	(wire
 		(pts
-			(xy 722.63 22.86) (xy 741.68 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c0a0b08-c04d-4beb-8bbe-6f5d160cb056")
-	)
-	(wire
-		(pts
 			(xy 160.02 327.66) (xy 160.02 347.98)
 		)
 		(stroke
@@ -26004,6 +26071,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 226.06) (xy 59.69 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704a317e-fe7b-428b-9ad8-5f93d9661c7c")
+	)
+	(wire
+		(pts
 			(xy 175.26 60.96) (xy 175.26 95.25)
 		)
 		(stroke
@@ -26161,6 +26238,16 @@
 			(type default)
 		)
 		(uuid "72e69a66-39bd-45ae-9cd8-1cc93d8e28f4")
+	)
+	(wire
+		(pts
+			(xy 34.29 203.2) (xy 36.83 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732959a5-9612-4966-b3b9-8b5b3664dfca")
 	)
 	(wire
 		(pts
@@ -28022,6 +28109,16 @@
 		)
 		(uuid "937e78c2-6230-48a7-8ad4-c212187c64ee")
 	)
+	(wire
+		(pts
+			(xy 722.63 48.26) (xy 741.68 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93a4d8fe-60b8-46fe-92b8-58fddbac0a5c")
+	)
 	(bus
 		(pts
 			(xy 266.7 39.37) (xy 266.7 125.73)
@@ -29252,6 +29349,16 @@
 		)
 		(uuid "a8283b32-37f6-4376-b8b8-e1f505e17840")
 	)
+	(wire
+		(pts
+			(xy 722.63 48.26) (xy 702.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8d37d54-a16f-46f1-8b98-e60243d0cdaa")
+	)
 	(bus
 		(pts
 			(xy 314.96 240.03) (xy 314.96 237.49)
@@ -30174,6 +30281,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 208.28) (xy 34.29 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc6137ec-ef91-48d2-8681-86eb80e4ab6b")
+	)
+	(wire
+		(pts
 			(xy 317.5 309.88) (xy 325.12 309.88)
 		)
 		(stroke
@@ -30994,16 +31111,6 @@
 	)
 	(wire
 		(pts
-			(xy 702.31 48.26) (xy 722.63 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9dcc8b5-ddbe-493e-8c91-5b49ecf21224")
-	)
-	(wire
-		(pts
 			(xy 114.3 139.7) (xy 114.3 241.3)
 		)
 		(stroke
@@ -31551,6 +31658,16 @@
 			(type default)
 		)
 		(uuid "d37dd705-dcb4-4135-ad10-030676290345")
+	)
+	(wire
+		(pts
+			(xy 34.29 203.2) (xy 34.29 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3db7a45-7c58-4888-b6b7-b858da82ec35")
 	)
 	(wire
 		(pts
@@ -33434,6 +33551,16 @@
 	)
 	(wire
 		(pts
+			(xy 722.63 22.86) (xy 741.68 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4e06a18-a541-4fbe-b5f3-ce762f9148fc")
+	)
+	(wire
+		(pts
 			(xy 515.62 317.5) (xy 528.32 317.5)
 		)
 		(stroke
@@ -34021,16 +34148,6 @@
 			(type default)
 		)
 		(uuid "fe1db42b-d4c6-4aa7-92ec-c3ecb66b2070")
-	)
-	(wire
-		(pts
-			(xy 722.63 48.26) (xy 741.68 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe266940-ad4c-4674-bfe8-255bc5106d9a")
 	)
 	(wire
 		(pts
@@ -39362,7 +39479,7 @@
 			(uuid "877400fc-1733-4194-a76b-54c497b97c0b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_A1")
 					(unit 4)
@@ -39428,7 +39545,7 @@
 			(uuid "0ed5babf-8813-402d-a02d-11b5793ecb9b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR011")
 					(unit 1)
@@ -39495,7 +39612,7 @@
 			(uuid "7523d575-c635-4ffb-b735-6a63c9baff2c")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR074")
 					(unit 1)
@@ -39589,7 +39706,7 @@
 			(uuid "13c576cc-1c19-4ab3-a664-d257527a6f98")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "RN1")
 					(unit 1)
@@ -39724,7 +39841,7 @@
 			(uuid "1089cd0c-bd18-4b67-ab5a-953000e00baa")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H7")
 					(unit 1)
@@ -39830,7 +39947,7 @@
 			(uuid "f204271f-0390-4306-8f88-633fb09aee66")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 7)
@@ -39896,7 +40013,7 @@
 			(uuid "2ca6e464-4b3d-4984-9d7c-20a71cb104c0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR025")
 					(unit 1)
@@ -39962,7 +40079,7 @@
 			(uuid "789f8c56-6e20-4e03-9d62-10626067ed41")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR018")
 					(unit 1)
@@ -40028,7 +40145,7 @@
 			(uuid "dfabbc6c-00c8-4511-b494-894f813ad651")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR050")
 					(unit 1)
@@ -40140,7 +40257,7 @@
 			(uuid "09b94273-b78f-4166-b40b-65c101cb1e61")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C3")
 					(unit 1)
@@ -40244,7 +40361,7 @@
 			(uuid "7da9675f-830b-4e7e-820a-ef341a0c420e")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D1")
 					(unit 2)
@@ -40310,7 +40427,7 @@
 			(uuid "cc31dbfd-addc-4690-80f3-47dbb6e4a5d0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR067")
 					(unit 1)
@@ -40377,7 +40494,7 @@
 			(uuid "079f0a9f-ba86-4573-a55a-443bc11a2f48")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR077")
 					(unit 1)
@@ -40413,7 +40530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 239.522 307.34 90)
 			(effects
 				(font
@@ -40447,7 +40564,7 @@
 			(uuid "2d78894a-f048-4051-8f0a-e0baed68570b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R8")
 					(unit 1)
@@ -40551,7 +40668,7 @@
 			(uuid "5389c012-1fdd-4287-93b5-b2b637cce7b7")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D1")
 					(unit 6)
@@ -40561,7 +40678,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS04")
-		(at 681.99 35.56 0)
+		(at 702.31 35.56 0)
 		(unit 7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40570,7 +40687,7 @@
 		(fields_autoplaced yes)
 		(uuid "14167d1d-dbf2-49be-9b99-2af6342de043")
 		(property "Reference" "U_D1"
-			(at 688.34 34.2899 0)
+			(at 708.66 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40579,7 +40696,7 @@
 			)
 		)
 		(property "Value" "74LS04"
-			(at 688.34 36.8299 0)
+			(at 708.66 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40588,7 +40705,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 681.99 35.56 0)
+			(at 702.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40597,7 +40714,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS04"
-			(at 681.99 35.56 0)
+			(at 702.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40606,7 +40723,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 681.99 35.56 0)
+			(at 702.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40657,7 +40774,7 @@
 			(uuid "f204271f-0390-4306-8f88-633fb09aee67")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D1")
 					(unit 7)
@@ -40722,7 +40839,7 @@
 			(uuid "baab048c-cd4c-4cc6-9a0e-9433c91f5bda")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR039")
 					(unit 1)
@@ -40788,7 +40905,7 @@
 			(uuid "a9b28d60-1028-4c80-ac2e-ac29ef42cad0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR04")
 					(unit 1)
@@ -40894,7 +41011,7 @@
 			(uuid "aff50940-1609-4927-86fa-6dfc6e0b9df1")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J6")
 					(unit 5)
@@ -41006,7 +41123,7 @@
 			(uuid "6a7bf192-b202-48ef-9af3-cb0fff49ed8f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J7")
 					(unit 1)
@@ -41072,7 +41189,7 @@
 			(uuid "1e3725d4-45fd-492a-aa8e-27fe93d99e45")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR035")
 					(unit 1)
@@ -41176,7 +41293,7 @@
 			(uuid "ef7ac15d-f307-49b1-bbee-268e41019f4d")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_A1")
 					(unit 3)
@@ -41242,7 +41359,7 @@
 			(uuid "0e880d34-7ec4-4e5b-be2c-36629ce6fe8f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR089")
 					(unit 1)
@@ -41252,7 +41369,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 702.31 35.56 0)
+		(at 722.63 35.56 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -41261,7 +41378,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e3fbe70-bc1f-4165-ad5f-948381e2cc63")
 		(property "Reference" "U_C4"
-			(at 708.66 34.2899 0)
+			(at 728.98 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41270,7 +41387,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 708.66 36.8299 0)
+			(at 728.98 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41279,7 +41396,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 702.31 35.56 0)
+			(at 722.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41288,7 +41405,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 702.31 35.56 0)
+			(at 722.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41297,7 +41414,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 702.31 35.56 0)
+			(at 722.63 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41348,7 +41465,7 @@
 			(uuid "2c045779-22ef-4666-b998-c6f64b4310f8")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C4")
 					(unit 5)
@@ -41382,7 +41499,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx07_Piano_10.8x19.34mm_W7.62mm_P2.54mm"
 			(at 40.64 179.07 0)
 			(effects
 				(font
@@ -41452,7 +41569,7 @@
 			(uuid "62022746-fd25-41bb-aa4c-fa4143f19de7")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "SW1")
 					(unit 1)
@@ -41556,7 +41673,7 @@
 			(uuid "b2c8503c-eea8-4dc8-a836-364b88097ab9")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_AB1")
 					(unit 2)
@@ -41680,7 +41797,7 @@
 			(uuid "11ebf08a-cc19-4066-808d-87c051b45117")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E7")
 					(unit 1)
@@ -41784,7 +41901,7 @@
 			(uuid "c87a7d37-bef8-4681-8f9b-cdb69afac058")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 2)
@@ -41852,7 +41969,7 @@
 			(uuid "420e0060-8e55-47a0-99e1-a26f74069109")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR082")
 					(unit 1)
@@ -41871,7 +41988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "262152c3-224e-4c27-978e-4cad9bb59241")
-		(property "Reference" "U_8A2"
+		(property "Reference" "U_A2"
 			(at 612.6165 132.08 0)
 			(effects
 				(font
@@ -41977,9 +42094,9 @@
 			(uuid "c74959fe-c1cc-4356-a1b6-4208f7f50ae6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_8A2")
+					(reference "U_A2")
 					(unit 1)
 				)
 			)
@@ -42081,7 +42198,7 @@
 			(uuid "e57a9088-999c-41c1-8971-a5b2b69445cc")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 1)
@@ -42147,7 +42264,7 @@
 			(uuid "de3ccf54-0815-464a-9135-6074241b95a2")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR019")
 					(unit 1)
@@ -42214,7 +42331,7 @@
 			(uuid "697c6c55-07ff-43dd-8623-f1704d0e37b8")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR073")
 					(unit 1)
@@ -42250,7 +42367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 106.68 55.88 0)
 			(effects
 				(font
@@ -42311,7 +42428,7 @@
 			(uuid "3ef155c2-904e-48e7-89e9-d3b9a628240e")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "DIS1")
 					(unit 1)
@@ -42377,7 +42494,7 @@
 			(uuid "615ffc3e-3301-4f7f-a69e-e74960725803")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR057")
 					(unit 1)
@@ -42412,7 +42529,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-18_W7.62mm"
 			(at 308.61 431.8 0)
 			(effects
 				(font
@@ -42494,7 +42611,7 @@
 			(uuid "8e6f5805-c4fc-41eb-b7ef-e0ed24ce8746")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F7")
 					(unit 1)
@@ -42560,7 +42677,7 @@
 			(uuid "9a80e885-376e-4863-a0f5-e57dbd359ad5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR045")
 					(unit 1)
@@ -42595,7 +42712,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 158.242 322.58 90)
 			(effects
 				(font
@@ -42629,7 +42746,7 @@
 			(uuid "7dd61f45-4643-4575-8623-6cbd18327937")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R5")
 					(unit 1)
@@ -42753,7 +42870,7 @@
 			(uuid "577da939-8421-4fde-b42d-762ee0002089")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_B5")
 					(unit 1)
@@ -42818,7 +42935,7 @@
 			(uuid "2eb0eb4c-26cf-4f1a-aa03-19e0f2d93441")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR070")
 					(unit 1)
@@ -42912,7 +43029,7 @@
 			(uuid "4db617a9-f47e-413c-86c6-d316f0112986")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "RN2")
 					(unit 1)
@@ -42978,7 +43095,7 @@
 			(uuid "22939034-8a7e-4a6d-a6da-b1a97b946b39")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR08")
 					(unit 1)
@@ -43044,7 +43161,7 @@
 			(uuid "3f63bbe5-40f0-483d-b35e-32d5a8e3e8fa")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR063")
 					(unit 1)
@@ -43109,7 +43226,7 @@
 			(uuid "24af9334-f464-4298-b9a2-c6833f4a691f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR069")
 					(unit 1)
@@ -43213,7 +43330,7 @@
 			(uuid "a065b9ad-226a-4fbb-a6ea-65bd86779950")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D1")
 					(unit 3)
@@ -43279,7 +43396,7 @@
 			(uuid "e607c12d-e36b-4f9e-a260-42bdea16de9f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR027")
 					(unit 1)
@@ -43346,7 +43463,7 @@
 			(uuid "f6c19bb2-8038-433d-aed4-6689e34437f6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R1")
 					(unit 1)
@@ -43412,7 +43529,7 @@
 			(uuid "a6189960-3c3f-45ea-8e79-170e6a096b11")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR022")
 					(unit 1)
@@ -43516,7 +43633,7 @@
 			(uuid "5370e2fb-e021-4ea6-9e7b-7311bd5e40d5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J6")
 					(unit 1)
@@ -43581,7 +43698,7 @@
 			(uuid "66f9f120-e52b-4eba-9648-34f4b6c57f90")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR015")
 					(unit 1)
@@ -43647,7 +43764,7 @@
 			(uuid "04df8ba1-e004-46f7-bcbb-cc4775b6ef9b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR06")
 					(unit 1)
@@ -43713,7 +43830,7 @@
 			(uuid "be515742-0ea8-478c-85c9-b4abd0f71ff2")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR088")
 					(unit 1)
@@ -43818,7 +43935,7 @@
 			(uuid "5c1c89c2-5a41-4b11-968c-2cf6c2ea28c2")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J5")
 					(unit 1)
@@ -43922,7 +44039,7 @@
 			(uuid "14b319f1-f743-4f22-b4cc-867211148cbd")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_AB1")
 					(unit 3)
@@ -43987,7 +44104,7 @@
 			(uuid "e659e009-38e9-4f8e-8ae2-257f92898091")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "J1")
 					(unit 1)
@@ -44099,7 +44216,7 @@
 			(uuid "0d56af2a-55a7-448c-a71e-60c6fc9749d9")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E4")
 					(unit 1)
@@ -44165,7 +44282,7 @@
 			(uuid "5d1bddcc-8681-4c8e-b0b7-f0395265af59")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR085")
 					(unit 1)
@@ -44232,7 +44349,7 @@
 			(uuid "a78d553d-acca-4ee3-9bf5-c051665cf513")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR076")
 					(unit 1)
@@ -44251,7 +44368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55fe9ffc-e87c-47d5-b392-9b76418a81a7")
-		(property "Reference" "U_8A4"
+		(property "Reference" "U_A4"
 			(at 613.8865 215.9 0)
 			(effects
 				(font
@@ -44357,9 +44474,9 @@
 			(uuid "48bd70a0-059b-4b88-ab2f-89876551de30")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_8A4")
+					(reference "U_A4")
 					(unit 1)
 				)
 			)
@@ -44461,7 +44578,7 @@
 			(uuid "ef7ac15d-f307-49b1-bbee-268e41019f4e")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C8")
 					(unit 1)
@@ -44565,7 +44682,7 @@
 			(uuid "b5f1e725-fcb5-45a2-8d7c-764de6bdec89")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J6")
 					(unit 2)
@@ -44631,7 +44748,7 @@
 			(uuid "85764f3c-d4f5-4e6f-b6b3-c2c7e39409a0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR056")
 					(unit 1)
@@ -44666,7 +44783,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 135.89 449.58 0)
 			(effects
 				(font
@@ -44736,7 +44853,7 @@
 			(uuid "6ba6aa50-ccad-4104-89af-8118a4bf676b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E2")
 					(unit 1)
@@ -44802,7 +44919,7 @@
 			(uuid "ff5838a6-3681-4771-b424-82ab0865c640")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR031")
 					(unit 1)
@@ -44908,7 +45025,7 @@
 			(uuid "ece052ef-6778-43ae-8051-d863c1fb90d6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_X1")
 					(unit 1)
@@ -44974,7 +45091,7 @@
 			(uuid "27d17622-eca1-4886-a8a6-ab24e2960d12")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR062")
 					(unit 1)
@@ -45040,7 +45157,7 @@
 			(uuid "c8f5b239-0d56-484a-975f-87e9cc9e1cd3")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR016")
 					(unit 1)
@@ -45106,7 +45223,7 @@
 			(uuid "a9b28d60-1028-4c80-ac2e-ac29ef42cad1")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR05")
 					(unit 1)
@@ -45172,7 +45289,7 @@
 			(uuid "b4156796-15b0-4b9a-8b56-f447580c8039")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR01")
 					(unit 1)
@@ -45307,7 +45424,7 @@
 			(uuid "00b70de4-79bf-4611-a81f-fcac84fdb50e")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F1")
 					(unit 1)
@@ -45373,7 +45490,7 @@
 			(uuid "2735cbee-3d13-4f13-8c97-fa5bb00ee4fc")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR040")
 					(unit 1)
@@ -45441,7 +45558,7 @@
 			(uuid "620deaea-a044-4573-a7cd-c7d16d8aafa6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR083")
 					(unit 1)
@@ -45565,7 +45682,7 @@
 			(uuid "d981d8f3-a5e8-4040-9300-699085242530")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_K7")
 					(unit 1)
@@ -45630,9 +45747,79 @@
 			(uuid "2d17cf10-e9a9-4dec-ae66-b3ffbb453eee")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 59.69 222.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dfe25d2-fb6e-4e05-8de5-0a18515a68ba")
+		(property "Reference" "C1"
+			(at 63.5 220.0909 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150 uF 15V"
+			(at 63.5 222.6309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal"
+			(at 60.6552 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 59.69 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3576cf9c-fb91-41ee-9cf2-34148a8ae93b")
+		)
+		(pin "2"
+			(uuid "3c18c4df-096e-42a3-a783-883058aa41ab")
+		)
+		(instances
+			(project "DiagBoard"
+				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -45696,7 +45883,7 @@
 			(uuid "3e8dc26d-e8bd-4551-90cd-43751d8169d8")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR037")
 					(unit 1)
@@ -45761,7 +45948,7 @@
 			(uuid "0cfb18ef-eedc-4214-ada7-9826cf6d719a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR068")
 					(unit 1)
@@ -45828,7 +46015,7 @@
 			(uuid "159e2650-5c99-4f01-a12f-0fba9605c36a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR075")
 					(unit 1)
@@ -45934,7 +46121,7 @@
 			(uuid "2c045779-22ef-4666-b998-c6f64b4310f9")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C8")
 					(unit 5)
@@ -46039,7 +46226,7 @@
 			(uuid "f71afe6a-a9be-41e1-9705-72726efb5dca")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_A1")
 					(unit 1)
@@ -46143,7 +46330,7 @@
 			(uuid "e57a9088-999c-41c1-8971-a5b2b69445cd")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 3)
@@ -46209,7 +46396,7 @@
 			(uuid "6303f613-a4a2-4110-a3ef-2f247d054c82")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR033")
 					(unit 1)
@@ -46275,7 +46462,7 @@
 			(uuid "9979d2cc-5825-47bd-8534-70f8b9a2a5af")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR054")
 					(unit 1)
@@ -46341,7 +46528,7 @@
 			(uuid "0046e18d-57d6-43c7-af22-e5ffd16d9adf")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR061")
 					(unit 1)
@@ -46407,7 +46594,7 @@
 			(uuid "8b227659-ee63-47a4-afe6-82b59a173087")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR041")
 					(unit 1)
@@ -46473,7 +46660,7 @@
 			(uuid "7e97289b-eed7-4f7c-8bca-445a4a3ad8bf")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR047")
 					(unit 1)
@@ -46608,7 +46795,7 @@
 			(uuid "f52fb60d-279c-48dc-9e73-240513880862")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H6")
 					(unit 1)
@@ -46674,7 +46861,7 @@
 			(uuid "ba67d04c-4b6e-4893-93e5-1aed5601d9bb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR052")
 					(unit 1)
@@ -46740,7 +46927,7 @@
 			(uuid "ad42f597-d6c9-4a1f-966d-4855fa20dc88")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR017")
 					(unit 1)
@@ -46806,7 +46993,7 @@
 			(uuid "dfabbc6c-00c8-4511-b494-894f813ad652")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR049")
 					(unit 1)
@@ -46941,7 +47128,7 @@
 			(uuid "258584ea-3b2a-4e1f-91c5-ede956927ec4")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H4")
 					(unit 1)
@@ -47076,7 +47263,7 @@
 			(uuid "3373abbd-0754-40c0-98fb-004cf7c9f78b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F4")
 					(unit 1)
@@ -47142,7 +47329,7 @@
 			(uuid "7aaa4179-a3ec-4254-9c1f-ca10dd99cd89")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR042")
 					(unit 1)
@@ -47208,7 +47395,7 @@
 			(uuid "39c486f7-301e-4186-aa44-72a1d04f31e4")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR043")
 					(unit 1)
@@ -47312,7 +47499,7 @@
 			(uuid "14b319f1-f743-4f22-b4cc-867211148cbe")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_AB1")
 					(unit 4)
@@ -47380,7 +47567,7 @@
 			(uuid "569ab7e0-23d9-47cb-a154-6822f12c5f71")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR081")
 					(unit 1)
@@ -47448,7 +47635,7 @@
 			(uuid "9858a88d-9dac-4dee-9109-d2a0e3dbbb73")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR078")
 					(unit 1)
@@ -47553,78 +47740,10 @@
 			(uuid "72fcf10a-c4c2-4ae2-bf2b-feb1a807260b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 41.91 205.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81feadbc-0d9f-45d6-8309-aba4f1a7e324")
-		(property "Reference" "SW2"
-			(at 41.91 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 41.91 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 41.91 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45aae155-ef13-4bec-8d2b-cce92b64fb50")
-		)
-		(pin "2"
-			(uuid "a7c05fd3-1670-4681-9366-c070a3e2c0c1")
-		)
-		(instances
-			(project "Diag"
-				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "SW2")
-					(unit 1)
 				)
 			)
 		)
@@ -47725,7 +47844,7 @@
 			(uuid "ef7ac15d-f307-49b1-bbee-268e41019f4f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C8")
 					(unit 2)
@@ -47761,7 +47880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L20.0mm_D10.0mm_P26.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal"
 			(at 764.2352 39.37 0)
 			(effects
 				(font
@@ -47795,7 +47914,7 @@
 			(uuid "a33e054d-02b9-48d9-a5e3-fb4536fb925c")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "C3")
 					(unit 1)
@@ -47900,7 +48019,7 @@
 			(uuid "1d474571-ae8e-4cfe-9ede-31c5248e9835")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J6")
 					(unit 4)
@@ -47934,7 +48053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 134.62 408.94 0)
 			(effects
 				(font
@@ -47998,7 +48117,7 @@
 			(uuid "37e55002-73cf-481f-833a-2c9cae932558")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E1")
 					(unit 1)
@@ -48063,7 +48182,7 @@
 			(uuid "9587ee3f-3d3f-4288-ae7c-340f9dc004c5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR013")
 					(unit 1)
@@ -48129,7 +48248,7 @@
 			(uuid "27d3901d-0ad6-4a26-9086-09c790ca6973")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR034")
 					(unit 1)
@@ -48195,7 +48314,7 @@
 			(uuid "66f9f120-e52b-4eba-9648-34f4b6c57f91")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR014")
 					(unit 1)
@@ -48213,7 +48332,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89b2119b-39cb-425d-9602-670c92744549")
-		(property "Reference" "U_8B3"
+		(property "Reference" "U_B3"
 			(at 608.6759 394.97 0)
 			(effects
 				(font
@@ -48319,9 +48438,9 @@
 			(uuid "4b7019f9-6c68-4733-bbf8-0228c2ef00f4")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_8B3")
+					(reference "U_B3")
 					(unit 1)
 				)
 			)
@@ -48454,7 +48573,7 @@
 			(uuid "1b7aac86-93dd-46de-bae5-37c56b786644")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F3")
 					(unit 1)
@@ -48566,7 +48685,7 @@
 			(uuid "1ad4ccac-281e-4ad0-bae0-393a3f36c53f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J2")
 					(unit 1)
@@ -48671,7 +48790,7 @@
 			(uuid "60acbf1f-f6df-4954-b4ba-7552e327d915")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 6)
@@ -48689,7 +48808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fdebdd2-618c-4f78-ba9f-6f3dd835986a")
-		(property "Reference" "U_8A5"
+		(property "Reference" "U_A5"
 			(at 613.0641 287.02 0)
 			(effects
 				(font
@@ -48795,9 +48914,9 @@
 			(uuid "9c1dad99-e3e8-468b-83cc-93a2e232c769")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_8A5")
+					(reference "U_A5")
 					(unit 1)
 				)
 			)
@@ -48930,7 +49049,7 @@
 			(uuid "1bfc9728-2c8e-4500-a4cf-8037b3c4da37")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F5")
 					(unit 1)
@@ -49065,7 +49184,7 @@
 			(uuid "db41be0f-9087-46ae-9835-cb55e89527ad")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F6")
 					(unit 1)
@@ -49131,7 +49250,7 @@
 			(uuid "309e4b1b-ebf4-4d8d-a333-445e5058d205")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR029")
 					(unit 1)
@@ -49199,7 +49318,7 @@
 			(uuid "beef3fd0-90a0-49a1-8e12-8d1b0dce2638")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR080")
 					(unit 1)
@@ -49334,7 +49453,7 @@
 			(uuid "99af14d4-263e-4f01-b938-cb28d0c1c603")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H5")
 					(unit 1)
@@ -49402,7 +49521,7 @@
 			(uuid "a2d7e1f6-8780-4c41-9eef-034fce8c86b6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR079")
 					(unit 1)
@@ -49467,7 +49586,7 @@
 			(uuid "731df1f8-0893-4367-a9fa-42590db09293")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR032")
 					(unit 1)
@@ -49579,7 +49698,7 @@
 			(uuid "8cd3c7b5-e8de-4f1e-aa40-6b0556ee1af0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H8")
 					(unit 1)
@@ -49645,7 +49764,7 @@
 			(uuid "222165a4-5cfa-4b0f-a452-c14568984ccb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR090")
 					(unit 1)
@@ -49680,7 +49799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 170.942 322.58 90)
 			(effects
 				(font
@@ -49714,7 +49833,7 @@
 			(uuid "7dd61f45-4643-4575-8623-6cbd18327938")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R7")
 					(unit 1)
@@ -49780,7 +49899,7 @@
 			(uuid "78063d5f-a647-419f-a961-ea83be46015f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR036")
 					(unit 1)
@@ -49887,7 +50006,7 @@
 			(uuid "9b2bda86-f421-4f93-8a4e-6da53c9ab04d")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J6")
 					(unit 3)
@@ -49953,7 +50072,7 @@
 			(uuid "b89a2901-e193-4420-9f28-7387b4cf249a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR020")
 					(unit 1)
@@ -49988,7 +50107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 164.592 322.58 90)
 			(effects
 				(font
@@ -50022,7 +50141,7 @@
 			(uuid "7dd61f45-4643-4575-8623-6cbd18327939")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R6")
 					(unit 1)
@@ -50157,7 +50276,7 @@
 			(uuid "d1fc830f-96ae-40b4-b0b4-9c1f048cf696")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H2")
 					(unit 1)
@@ -50223,7 +50342,7 @@
 			(uuid "eb664051-dc29-4926-8bba-1cef61e4d5df")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR038")
 					(unit 1)
@@ -50289,7 +50408,7 @@
 			(uuid "b4156796-15b0-4b9a-8b56-f447580c803a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR02")
 					(unit 1)
@@ -50355,7 +50474,7 @@
 			(uuid "cb112091-22ce-4595-ab98-84f8e5b5d223")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR053")
 					(unit 1)
@@ -50390,7 +50509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-18_W7.62mm"
 			(at 308.61 477.52 0)
 			(effects
 				(font
@@ -50472,7 +50591,7 @@
 			(uuid "57397c70-e884-4a61-bf2f-9d8227e24bc5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F8")
 					(unit 1)
@@ -50578,7 +50697,7 @@
 			(uuid "9505f03c-abd5-467e-9200-0fc285313038")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_A1")
 					(unit 5)
@@ -50682,7 +50801,7 @@
 			(uuid "e57a9088-999c-41c1-8971-a5b2b69445ce")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D1")
 					(unit 1)
@@ -50786,7 +50905,7 @@
 			(uuid "a4464cc0-acd6-41a2-bd12-346a003917c3")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J4")
 					(unit 5)
@@ -50853,7 +50972,7 @@
 			(uuid "47697638-6932-4257-806e-0abb6c968e67")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R2")
 					(unit 1)
@@ -50919,7 +51038,7 @@
 			(uuid "d2e0e3ea-6ed4-4910-a4b0-7c662ec7d481")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR064")
 					(unit 1)
@@ -50929,7 +51048,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 219.71 0)
+		(at 59.69 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -50938,7 +51057,7 @@
 		(fields_autoplaced yes)
 		(uuid "b172b6ba-c944-40bb-a903-e09fa5b7e46b")
 		(property "Reference" "#PWR03"
-			(at 59.69 226.06 0)
+			(at 59.69 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50947,7 +51066,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 224.79 0)
+			(at 59.69 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50955,7 +51074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 219.71 0)
+			(at 59.69 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50964,7 +51083,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 219.71 0)
+			(at 59.69 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50973,7 +51092,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 219.71 0)
+			(at 59.69 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50985,7 +51104,7 @@
 			(uuid "9675ceb2-d5eb-44b4-a271-14bdf456fa62")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR03")
 					(unit 1)
@@ -51051,7 +51170,7 @@
 			(uuid "739c04c1-ea65-4dcc-948f-8b1e3956635d")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR044")
 					(unit 1)
@@ -51117,7 +51236,7 @@
 			(uuid "f138d4d3-8bd4-4b58-a2d4-ddbd32482bbc")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR046")
 					(unit 1)
@@ -51183,9 +51302,89 @@
 			(uuid "9d037c70-076f-451f-8ab5-4b8e2ee739fa")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_DPDT")
+		(at 41.91 210.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b57f6cdc-7381-4a1d-be9d-220f2ec271a5")
+		(property "Reference" "SW2"
+			(at 41.91 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push_DPDT"
+			(at 41.91 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_Push_2P2T_Toggle_CK_PVA2OAH5xxxxxxV2"
+			(at 41.91 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Momentary Switch, dual pole double throw"
+			(at 41.91 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c02d960a-29cf-48cd-878c-c0bb675c0be8")
+		)
+		(pin "6"
+			(uuid "c0cfaf33-31c5-46f0-b1c5-c061a5587fc4")
+		)
+		(pin "2"
+			(uuid "93dece64-1a15-4ece-8de3-e8c9246133f1")
+		)
+		(pin "4"
+			(uuid "81b2a176-bdd7-45fe-9b86-b3368893d2fd")
+		)
+		(pin "5"
+			(uuid "8e830961-80c9-488a-a6b8-e7860df5acab")
+		)
+		(pin "3"
+			(uuid "9e950be3-28b2-4845-b0e5-0d50cb7423f8")
+		)
+		(instances
+			(project "DiagBoard"
+				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -51250,7 +51449,7 @@
 			(uuid "85dd7006-c4b7-4aad-b3a3-51abf1ca204a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R4")
 					(unit 1)
@@ -51315,7 +51514,7 @@
 			(uuid "9587ee3f-3d3f-4288-ae7c-340f9dc004c6")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR012")
 					(unit 1)
@@ -51350,7 +51549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 407.67 372.11 0)
 			(effects
 				(font
@@ -51414,7 +51613,7 @@
 			(uuid "b898dc9b-5acc-42a3-9291-a5874db100ad")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E1")
 					(unit 2)
@@ -51518,7 +51717,7 @@
 			(uuid "880e6230-a496-434e-be9f-cc8e968a08f7")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J5")
 					(unit 2)
@@ -51554,7 +51753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 106.68 120.65 0)
 			(effects
 				(font
@@ -51615,7 +51814,7 @@
 			(uuid "3ef155c2-904e-48e7-89e9-d3b9a628240f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "DIS2")
 					(unit 1)
@@ -51719,79 +51918,9 @@
 			(uuid "124017ae-f1a3-41f6-83b3-3a02f1563e9a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 59.69 215.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c77f2a4f-2ae0-4c5a-9e3b-3d2aa3fab08b")
-		(property "Reference" "C1"
-			(at 63.5 214.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 63.5 217.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 60.6552 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 59.69 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cb3b7886-5c12-490b-bbd1-fc71020baeb9")
-		)
-		(pin "1"
-			(uuid "8f15f61e-8e25-4728-add4-329e19b374fe")
-		)
-		(instances
-			(project "Diag"
-				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -51855,7 +51984,7 @@
 			(uuid "925fd5a0-0591-475b-b71b-fffeaec978bb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR092")
 					(unit 1)
@@ -51990,7 +52119,7 @@
 			(uuid "61dbbdd1-c8d6-4956-ae7d-2addf584d34c")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H1")
 					(unit 1)
@@ -52057,7 +52186,7 @@
 			(uuid "d73847d8-c461-48d7-a522-a63a8cbf2c9a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR071")
 					(unit 1)
@@ -52094,7 +52223,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
 			(at 241.3 458.47 0)
 			(effects
 				(font
@@ -52155,7 +52284,7 @@
 			(uuid "a5d6b433-75d1-48a8-88e8-2886221c2837")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_D2")
 					(unit 1)
@@ -52259,7 +52388,7 @@
 			(uuid "14b319f1-f743-4f22-b4cc-867211148cbf")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_AB1")
 					(unit 1)
@@ -52365,7 +52494,7 @@
 			(uuid "42ee42cd-5a96-4e61-a718-cb4c14c6c16c")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C4")
 					(unit 4)
@@ -52431,7 +52560,7 @@
 			(uuid "73b4e692-1ce2-4b93-a273-19caee1f91db")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR09")
 					(unit 1)
@@ -52450,7 +52579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d971e9c5-7cdb-416f-95fe-0b233c7b2014")
-		(property "Reference" "U_8A6"
+		(property "Reference" "U_A6"
 			(at 613.8865 340.36 0)
 			(effects
 				(font
@@ -52556,9 +52685,9 @@
 			(uuid "f42e9220-cd53-4e4b-bf67-be1cc086aa91")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_8A6")
+					(reference "U_A6")
 					(unit 1)
 				)
 			)
@@ -52592,7 +52721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L20.0mm_D10.0mm_P26.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal"
 			(at 742.6452 39.37 0)
 			(effects
 				(font
@@ -52626,7 +52755,7 @@
 			(uuid "a33e054d-02b9-48d9-a5e3-fb4536fb925d")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "C2")
 					(unit 1)
@@ -52905,7 +53034,7 @@
 			(uuid "01cdf102-a59c-43b9-9acc-a4b213e7ed42")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "P1")
 					(unit 1)
@@ -52973,7 +53102,7 @@
 			(uuid "699bfddf-f4a0-41a5-9932-6c2c6ba7c424")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR084")
 					(unit 1)
@@ -53078,7 +53207,7 @@
 			(uuid "eefe7fc6-fd42-49e1-94eb-7c0e90cdb954")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C4")
 					(unit 3)
@@ -53144,7 +53273,7 @@
 			(uuid "80476e9c-b560-4a6e-ab0f-845c27975a4a")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR024")
 					(unit 1)
@@ -53248,7 +53377,7 @@
 			(uuid "294dcd09-7be7-4455-b240-bf9c726cb110")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J5")
 					(unit 3)
@@ -53360,7 +53489,7 @@
 			(uuid "a2c1e0df-2d00-4e84-b98c-fec6076a6ac0")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_J8")
 					(unit 1)
@@ -53465,7 +53594,7 @@
 			(uuid "40cd619c-1737-4641-b71d-43af52b05225")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C4")
 					(unit 2)
@@ -53501,7 +53630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_5KPW_P12.70mm_Horizontal"
+		(property "Footprint" "Diode_THT:D_5W_P10.16mm_Horizontal"
 			(at 59.69 200.66 0)
 			(effects
 				(font
@@ -53553,7 +53682,7 @@
 			(uuid "c570cf79-08f0-4f98-bc7c-eb36af227b75")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "D1")
 					(unit 1)
@@ -53619,7 +53748,7 @@
 			(uuid "561d6ec2-c104-46d7-8086-ab876b3fdd1b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR021")
 					(unit 1)
@@ -53685,7 +53814,7 @@
 			(uuid "e4e6f3fd-7f51-45a8-ad9e-5b80d04794db")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR086")
 					(unit 1)
@@ -53751,7 +53880,7 @@
 			(uuid "099fc717-a7e6-4d1b-abb5-7b6d7747ef3f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR055")
 					(unit 1)
@@ -53855,7 +53984,7 @@
 			(uuid "ef7ac15d-f307-49b1-bbee-268e41019f50")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_A1")
 					(unit 2)
@@ -53921,7 +54050,7 @@
 			(uuid "d2d91293-028e-40f8-88c2-a5a771d682ca")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR059")
 					(unit 1)
@@ -53987,7 +54116,7 @@
 			(uuid "935a7e38-baf2-4537-9464-1a507d47c28d")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR065")
 					(unit 1)
@@ -54091,7 +54220,7 @@
 			(uuid "0955d9f0-f0c3-4423-9697-1b0b3215fc9b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C8")
 					(unit 3)
@@ -54156,7 +54285,7 @@
 			(uuid "93f71475-1d92-4811-824d-03ebee3e4e33")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR010")
 					(unit 1)
@@ -54222,7 +54351,7 @@
 			(uuid "59fa3e14-b3ce-4e40-9413-02928ae568d5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR026")
 					(unit 1)
@@ -54334,7 +54463,7 @@
 			(uuid "8bbe7ea3-e4c9-4ef3-b92e-826ada2599bb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_E3")
 					(unit 1)
@@ -54400,7 +54529,7 @@
 			(uuid "f8c58865-e37b-4622-a3f9-e4502ea638eb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR066")
 					(unit 1)
@@ -54466,116 +54595,10 @@
 			(uuid "f278dba8-07eb-405e-87a7-fddefb5ae069")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR058")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS38")
-		(at 722.63 35.56 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f36dd4c4-45b1-4832-90e3-3ffc15fcc96b")
-		(property "Reference" "U_B1"
-			(at 728.98 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LS38"
-			(at 728.98 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 722.63 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38"
-			(at 722.63 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Buffer 2-input NAND Open collector"
-			(at 722.63 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cfde1b72-abb8-453a-ae23-dcbf01af8028")
-		)
-		(pin "4"
-			(uuid "c299cdb9-8498-4861-b8bf-4dc4f80f79bd")
-		)
-		(pin "10"
-			(uuid "a9d5dab3-0afb-487c-aa7a-b006b32608a3")
-		)
-		(pin "3"
-			(uuid "7cb6b912-b9bd-4faa-bdb8-38d38f9a6fd9")
-		)
-		(pin "12"
-			(uuid "800330f3-5861-47c1-8931-86f793e8adf8")
-		)
-		(pin "13"
-			(uuid "364b7320-f219-4cec-9d69-d05c6fa7eff9")
-		)
-		(pin "5"
-			(uuid "29966882-1181-48f5-be11-673079d5f417")
-		)
-		(pin "9"
-			(uuid "261d8de8-bcc9-43ae-845d-b7a9ec309c79")
-		)
-		(pin "14"
-			(uuid "09c15b32-0a06-4f85-97d0-83d83a9b2433")
-		)
-		(pin "7"
-			(uuid "7d83c85b-e90b-4e4b-9f3d-e63b0bad071e")
-		)
-		(pin "6"
-			(uuid "227e2204-e8a0-4e18-9022-550fb6b36ff0")
-		)
-		(pin "2"
-			(uuid "d068c0c7-ff1c-44e5-8817-749ad3c129f8")
-		)
-		(pin "8"
-			(uuid "248d1512-4ac0-408d-a139-c72be9131295")
-		)
-		(pin "11"
-			(uuid "9505f03c-abd5-467e-9200-0fc285313039")
-		)
-		(instances
-			(project "Diag"
-				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
-					(reference "U_B1")
-					(unit 5)
 				)
 			)
 		)
@@ -54638,7 +54661,7 @@
 			(uuid "4e7f8079-b29e-496b-af86-787f96c8ae62")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR07")
 					(unit 1)
@@ -54704,7 +54727,7 @@
 			(uuid "53132f87-a17f-4ee1-9836-e21da4a89579")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR023")
 					(unit 1)
@@ -54809,7 +54832,7 @@
 			(uuid "841b3da9-3495-439c-8e68-ae8031c191f9")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_C8")
 					(unit 4)
@@ -54875,7 +54898,7 @@
 			(uuid "949eb14a-7bd2-4f6e-af55-cc95a6c2be64")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR030")
 					(unit 1)
@@ -55010,7 +55033,7 @@
 			(uuid "07ecc89a-776d-4575-902f-d5abb02e8101")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_F2")
 					(unit 1)
@@ -55076,7 +55099,7 @@
 			(uuid "e225ea97-abd3-4734-8219-f44a245fea2f")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR060")
 					(unit 1)
@@ -55143,10 +55166,116 @@
 			(uuid "9e0c464e-2f99-4ca6-bd6a-e4fb759ce6af")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR072")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74LS38")
+		(at 681.99 35.56 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb819ff3-1287-4fa9-9fc0-31da32c8327b")
+		(property "Reference" "U_AB1"
+			(at 688.34 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LS38"
+			(at 688.34 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 681.99 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS38"
+			(at 681.99 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Buffer 2-input NAND Open collector"
+			(at 681.99 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfde1b72-abb8-453a-ae23-dcbf01af8028")
+		)
+		(pin "4"
+			(uuid "c299cdb9-8498-4861-b8bf-4dc4f80f79bd")
+		)
+		(pin "10"
+			(uuid "a9d5dab3-0afb-487c-aa7a-b006b32608a3")
+		)
+		(pin "3"
+			(uuid "7cb6b912-b9bd-4faa-bdb8-38d38f9a6fd9")
+		)
+		(pin "12"
+			(uuid "800330f3-5861-47c1-8931-86f793e8adf8")
+		)
+		(pin "13"
+			(uuid "364b7320-f219-4cec-9d69-d05c6fa7eff9")
+		)
+		(pin "5"
+			(uuid "29966882-1181-48f5-be11-673079d5f417")
+		)
+		(pin "9"
+			(uuid "261d8de8-bcc9-43ae-845d-b7a9ec309c79")
+		)
+		(pin "14"
+			(uuid "825a97e3-d288-436e-8887-807054f64dd6")
+		)
+		(pin "7"
+			(uuid "931a7049-537e-455d-bba3-ece67b6173fe")
+		)
+		(pin "6"
+			(uuid "227e2204-e8a0-4e18-9022-550fb6b36ff0")
+		)
+		(pin "2"
+			(uuid "d068c0c7-ff1c-44e5-8817-749ad3c129f8")
+		)
+		(pin "8"
+			(uuid "248d1512-4ac0-408d-a139-c72be9131295")
+		)
+		(pin "11"
+			(uuid "9505f03c-abd5-467e-9200-0fc285313039")
+		)
+		(instances
+			(project "DiagBoard"
+				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
+					(reference "U_AB1")
+					(unit 5)
 				)
 			)
 		)
@@ -55278,7 +55407,7 @@
 			(uuid "2dff66b8-2ebd-4b1e-a238-c438403a82be")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "U_H3")
 					(unit 1)
@@ -55344,7 +55473,7 @@
 			(uuid "2cdd8047-6c5d-4953-b33d-99ac5bb2cbfb")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR051")
 					(unit 1)
@@ -55378,7 +55507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm"
 			(at 90.17 332.74 0)
 			(effects
 				(font
@@ -55430,7 +55559,7 @@
 			(uuid "33e995ad-320d-44a9-8c99-518204220f99")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "SW3")
 					(unit 1)
@@ -55497,7 +55626,7 @@
 			(uuid "85dd7006-c4b7-4aad-b3a3-51abf1ca204b")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "R3")
 					(unit 1)
@@ -55563,7 +55692,7 @@
 			(uuid "a2f0b84b-ec8f-4c5a-97df-1c60c09ae4a5")
 		)
 		(instances
-			(project "Diag"
+			(project "DiagBoard"
 				(path "/efb52086-0de5-4c77-ad8c-76e32e1fcd5d"
 					(reference "#PWR048")
 					(unit 1)
