@@ -14,6 +14,7 @@
 #define CTL_RST (1 << 0)
 #define CTL_nWR (1 << 1)
 #define CTL_nRD (1 << 2)
+#define CTL_LED (1 << 6)
 
 #define CTL_IDLE  (CTL_nWR | CTL_nRD)
 #define CTL_WR    (CTL_nRD)
@@ -23,6 +24,20 @@
 #define TRIS_IN  0xFF
 
 static int reset;
+static unsigned char led;
+
+static void wrControl(unsigned char lines)
+{
+    if (led)
+        lines |= CTL_LED;
+    CTRL_PORT = lines;
+}
+
+void PIOBus_LED(unsigned char status)
+{
+    led = status;
+    PORTCbits.RC6 = status;
+}
 
 void PIOBus_Init(void)
 {
@@ -46,7 +61,7 @@ void PIOBus_Reset(unsigned char state)
         ctl |= CTL_RST;
 
     reset = state;
-    CTRL_PORT = ctl;
+    wrControl(ctl);
 }
 
 static void release(void)
@@ -62,9 +77,9 @@ void PIOBus_Write(unsigned char addr, unsigned char data)
     DATA_DIR = TRIS_OUT;
     ADDR_PORT = addr;
     DATA_PORT = data;
-    CTRL_PORT = CTL_WR;
+    wrControl(CTL_WR);
     _delay(2);  // 400 ns
-    CTRL_PORT = CTL_IDLE;
+    wrControl(CTL_IDLE);
 }
 
 unsigned char PIOBus_Read(unsigned char addr)
@@ -74,10 +89,10 @@ unsigned char PIOBus_Read(unsigned char addr)
     release();
     DATA_DIR = TRIS_IN;  
     ADDR_PORT = addr;
-    CTRL_PORT = CTL_RD;
+    wrControl(CTL_RD);
     _delay(2);
     ret = DATA_PORT;
-    CTRL_PORT = CTL_IDLE;
+    wrControl(CTL_IDLE);
 
     return ret;
 }

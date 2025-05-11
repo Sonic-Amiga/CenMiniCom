@@ -62,3 +62,5 @@ void APP_DeviceCustomHIDStart(void);
 *
 ********************************************************************/
 void APP_DeviceCustomHIDTasks(void);
+
+void APP_LEDUpdateUSBStatus(void);

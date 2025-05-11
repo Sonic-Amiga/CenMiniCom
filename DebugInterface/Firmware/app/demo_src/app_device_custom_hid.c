@@ -94,6 +94,8 @@ static void set_reply(unsigned char *reply, unsigned char cmd0, unsigned char cm
     reply[CMD1_OFFSET] = cmd1;
 }
 
+static int ledCount = 0;
+
 /*********************************************************************
 * Function: void APP_DeviceCustomHIDTasks(void);
 *
@@ -134,6 +136,9 @@ void APP_DeviceCustomHIDTasks()
         unsigned char cmd0 = ReceivedDataBuffer[CMD0_OFFSET];
         unsigned char cmd1 = ReceivedDataBuffer[CMD1_OFFSET];
         unsigned char i;
+        
+        ledCount = 5;
+        PIOBus_LED(1);
         
         // Any unknown command will respond with '??'
         response[CMD0_OFFSET] = '?';
@@ -188,5 +193,17 @@ void APP_DeviceCustomHIDTasks()
         //Re-arm the OUT endpoint, so we can receive the next OUT data packet 
         //that the host may try to send us.
         startRead();
+    }
+}
+
+void APP_LEDUpdateUSBStatus(void)
+{
+    if(USBIsDeviceSuspended() == true)
+    {
+        PIOBus_LED(0);
+        return;
+    } else if (ledCount) {
+        if (--ledCount == 0)
+            PIOBus_LED(0);
     }
 }
