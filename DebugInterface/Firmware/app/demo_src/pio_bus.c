@@ -62,11 +62,9 @@ void PIOBus_Write(unsigned char addr, unsigned char data)
     DATA_DIR = TRIS_OUT;
     ADDR_PORT = addr;
     DATA_PORT = data;
-    __delay_us(1);
     CTRL_PORT = CTL_WR;
-    __delay_us(1);
+    _delay(2);  // 400 ns
     CTRL_PORT = CTL_IDLE;
-    __delay_us(1);
 }
 
 unsigned char PIOBus_Read(unsigned char addr)
@@ -76,12 +74,10 @@ unsigned char PIOBus_Read(unsigned char addr)
     release();
     DATA_DIR = TRIS_IN;  
     ADDR_PORT = addr;
-    __delay_us(1);
     CTRL_PORT = CTL_RD;
-    __delay_us(1);
+    _delay(2);
     ret = DATA_PORT;
     CTRL_PORT = CTL_IDLE;
-    __delay_us(1);
 
     return ret;
 }
