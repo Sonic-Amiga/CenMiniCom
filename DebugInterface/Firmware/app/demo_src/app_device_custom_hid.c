@@ -133,6 +133,7 @@ void APP_DeviceCustomHIDTasks()
         uint8_t response[CMD_PACKET_LENGTH] = {0};
         unsigned char cmd0 = ReceivedDataBuffer[CMD0_OFFSET];
         unsigned char cmd1 = ReceivedDataBuffer[CMD1_OFFSET];
+        unsigned char i;
         
         // Any unknown command will respond with '??'
         response[CMD0_OFFSET] = '?';
@@ -153,11 +154,11 @@ void APP_DeviceCustomHIDTasks()
                 // cmd1 - length of data to write.
                 // addr - address to write to
                 // data (`cmd1` bytes) - data to write
-                switch (cmd1) {
-                    case 1:
-                        PIOBus_Write(ReceivedDataBuffer[ADDR_OFFSET], ReceivedDataBuffer[DATA_OFFSET]);
-                        memcpy(response, ReceivedDataBuffer, sizeof(response));
-                        break;
+                if (cmd1 > 0 && cmd1 < 9) {
+                    for (i = 0; i < cmd1; i++) {
+                        PIOBus_Write(ReceivedDataBuffer[ADDR_OFFSET] + i, ReceivedDataBuffer[DATA_OFFSET + i]);
+                    }
+                    memcpy(response, ReceivedDataBuffer, sizeof(response));
                 }
                 break;
 
@@ -165,12 +166,12 @@ void APP_DeviceCustomHIDTasks()
                 // 'R' - Read value from the specified address
                 // cmd1 - length of data to read
                 // addr - address to read from
-                switch (cmd1) {
-                    case 1:                        
-                        response[DATA_OFFSET] = PIOBus_Read(ReceivedDataBuffer[ADDR_OFFSET]);
-                        set_reply(response, cmd0, cmd1);
-                        response[ADDR_OFFSET] = ReceivedDataBuffer[ADDR_OFFSET];
-                        break;
+                if (cmd1 > 0 && cmd1 < 9) {
+                    for (i = 0; i < cmd1; i++) {
+                        response[DATA_OFFSET + i] = PIOBus_Read(ReceivedDataBuffer[ADDR_OFFSET] + i);
+                    }
+                    set_reply(response, cmd0, cmd1);
+                    response[ADDR_OFFSET] = ReceivedDataBuffer[ADDR_OFFSET];
                 }
                 break;
         }
