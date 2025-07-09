@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.6,
-          "width": 1.6
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -505,6 +505,16 @@
         "wire_width": 6
       },
       {
+        "clearance": 0.25,
+        "name": "Aux.Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 1.0,
+        "via_drill": 0.5
+      },
+      {
         "bus_width": 12,
         "clearance": 0.25,
         "diff_pair_gap": 0.25,
@@ -514,7 +524,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,
         "via_diameter": 2.0,
@@ -537,11 +547,11 @@
         "pattern": "GND"
       },
       {
-        "netclass": "Power",
+        "netclass": "Aux.Power",
         "pattern": "+12V"
       },
       {
-        "netclass": "Power",
+        "netclass": "Aux.Power",
         "pattern": "-12V"
       }
     ]
